@@ -1,0 +1,197 @@
+:root {
+    --black: #000000;
+    --red: rgb(118, 5, 4);
+    --light-red: rgb(177, 43, 36);
+    --light-red2: rgb(235, 107, 100);
+    --light-yellow: rgb(251, 220, 106);
+    --green: rgb(0, 117, 16);
+    --light-green: rgb(100, 255, 121);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* elemental */
+img {
+    width: 150px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+/*? Header  */
+header{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: white;
+    box-shadow: 0px 5px 30px #888888
+}
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+#options nav ul {
+    display: flex;
+}
+#options nav ul li {
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:active {
+    color: var(--light-red);
+}
+/* main */
+main{
+    width: 100%;
+}
+/*? Bio */
+#Bio {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+}
+#Bio .info {
+    padding-right:  12px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info .title {
+    margin-top: 12px;
+    font-size: 3.2rem;
+}
+.info .detail {
+    margin-top: 24px;
+    font-size: 1.6rem;
+}
+.info .detail p:first-child {
+    margin-bottom: 6px;
+}
+.info .detail a {
+    color: var(--light-red);
+    text-decoration: underline;
+}
+.profile-image {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-image img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+.experience {
+    margin-top: 6px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience span {
+    margin-right: 5px;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.experience p {
+    font-size: 1.2rem;
+}
+/*? Projects */
+#Projects {
+    padding: 18px;
+    background-color: rgb(51, 51, 51);
+    color: white
+}
+#Projects h2 {
+    margin: 12px 0;
+    text-align: center;
+    font-size: 2.4rem;
+}
+#Projects .projects-container {
+    width: 100%;
+}
+#Projects .projects-container article {
+    margin: 24px auto;
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid var(--light-yellow);
+    border-radius: 15px 15px 0 15px;
+    box-shadow:1px 1px var(--light-yellow),5px 10px var(--light-red), 6px 11px var(--light-yellow);
+}
+#Projects .projects-container article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.info-container {
+    padding: 12px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.info-container h3 {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    color: var(--light-red2);
+}
+.info-container p:last-child {
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+.is-responsive {
+    color: var(--light-green);
+}
+.isnt-responsive {
+    color: var(--light-red2);
+}
+.links-container {
+    padding: 6px 12px 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links-container a {
+    display: inline-block;
+    width: 40%;
+    height: 36px;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.links-container .repo {
+    border: 1px solid white;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+.links-container .repo:hover {
+    border: 1px solid white;
+    background-color: rgb(36, 36, 36);
+    color: var(--light-green);
+}
+.links-container .website {
+    border: 1px solid black;
+    background-color: var(--light-yellow);
+    color: black;
+}
+.links-container .website:hover {
+    background-color: var(--light-red)
+}
