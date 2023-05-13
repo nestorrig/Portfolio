@@ -1,0 +1,60 @@
+header {
+    height: 70px;
+    padding: 5px 24px;
+}
+.logo {
+    font-size: 4rem;
+}
+#options nav ul li {
+    font-size: 2rem;
+}
+.in-img {
+    display: none;
+}
+#Bio .info {
+    padding-right: 30px;
+}
+.info .no-img {
+    display: flex;
+}
+.info .title {
+    margin-top: 18px;
+    font-size: 4.2rem;
+}
+.info .detail {
+    margin: 26px 0;
+    font-size: 2.6rem;
+}
+.info .detail p:first-child {
+    margin-bottom: 10px;
+}
+#Projects h2 {
+    margin-bottom: 32px;
+}
+#Projects .projects-container {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#Projects .projects-container article {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 320px;
+}
+footer .message-container .logo {
+    font-size: 6rem;
+    margin-bottom: 8px;
+}
+footer .message-container .message {
+    font-size: 2rem;
+}
+footer .social-media {
+    flex-direction: row;
+}
+footer .social-media .social-item {
+    width: auto;
+    padding-left: 20px;
+    font-size: 3rem;
+}
