@@ -52,9 +52,9 @@ footer .message-container .message {
 }
 footer .social-media {
     flex-direction: row;
+    gap: 30px;
 }
 footer .social-media .social-item {
-    width: auto;
     padding-left: 20px;
     font-size: 3rem;
 }
