@@ -36,6 +36,8 @@ li {
 }
 /*? Header  */
 header{
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 50px;
     padding: 5px 10px;
@@ -104,6 +106,7 @@ input[type='checkbox']:checked + .switch {
 /* main */
 main{
     width: 100%;
+    margin-top: 50px;
 }
 /*? Bio */
 #Bio {
@@ -239,27 +242,27 @@ main{
     border: 1px solid var(--black-1);
     color: var(--black-1);
 }
+.links-container .repo:hover {
+    filter: invert(1);;
+    background-color: rgb(241, 137, 251);
+}
 .links-container .repo .repository {
     width: 30px;
     height: 30px;
     background-image: url(../assets/mdi_source-repository.svg);
 }
-.links-container .repo:hover {
-    border-color: var(--light-green);
-    color: var(--light-green);
-}
 .links-container .website {
     border: 1px solid var(--black-1);
     color: var(--black-1);
+}
+.links-container .website:hover {
+    filter: invert(1);
+    background-color: rgb(78, 212, 219);
 }
 .links-container .website .visit {
     width: 30px;
     height: 30px;
     background-image: url(../assets/iconoir_internet.svg);
-}
-.links-container .website:hover {
-    border-color: var(--light-red);
-    color: var(--light-red)
 }
 /*? Skills */
 #Skills {
@@ -271,15 +274,15 @@ main{
     font-size: 5rem;
     font-weight: bold;
 }
-.html a:hover {
-    color: #f25320;
-}
-.css a:hover {
-    color: #2449d8;
-}
-.js a:hover {
-    color: #ead41c;
-}
+    .html a:hover {
+        color: #f25320;
+    }
+    .css a:hover {
+        color: #2449d8;
+    }
+    .js a:hover {
+        color: #ead41c;
+    }
 /*? Experience */
 /*? Footer  */
 footer {

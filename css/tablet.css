@@ -11,6 +11,9 @@ header {
 .in-img {
     display: none;
 }
+main {
+    margin-top: 70px;
+}
 #Bio .info {
     padding-right: 30px;
 }
