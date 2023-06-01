@@ -124,8 +124,8 @@ main{
     align-items: flex-start;
 }
 .info  .no-img{
-    float: none;
-    position: relative;
+    /* float: none;
+    position: relative; */
     display: none;
 }
 .info .title {
