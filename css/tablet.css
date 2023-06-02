@@ -5,8 +5,19 @@ header {
 .logo {
     font-size: 4rem;
 }
+#options .nav--desktop {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+#options .nav--mobile {
+    display: none;
+}
 #options nav ul li {
     font-size: 2rem;
+}
+.icon-menu {
+    display: none;
 }
 .in-img {
     display: none;

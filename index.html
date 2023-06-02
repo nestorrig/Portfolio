@@ -17,7 +17,7 @@
             Nestor
         </section>
         <section id="options">
-            <nav>
+            <nav class="nav--desktop">
                 <ul>
                     <li>
                         <a href="#Projects" class="nav-link">Projects</a>
@@ -29,12 +29,30 @@
                         <a href="#Experience" class="nav-link">Experience</a>
                     </li>
                 </ul>
-                <div id="icon-menu" style="display: none;">
+                <div id="Switch-theme">
                     <input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
                 </div>
             </nav>
+            <nav class="nav--mobile interactive inactive" id="Mobile-menu">
+                <ul>
+                    <li>
+                        <a href="#Projects" class="nav-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Experience" class="nav-link">Experience</a>
+                    </li>
+                </ul>
+                <div id="Switch-theme">
+                    <input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
+                </div>
+            </nav>
+            <span class="IMG  icon-menu" id="Menu-icon"></span>
         </section>
     </header>
+
     <main>
         <section id="Bio">
             <article class="info">
@@ -262,5 +280,6 @@
             </a>
         </section>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
