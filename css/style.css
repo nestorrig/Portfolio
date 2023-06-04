@@ -6,7 +6,7 @@
     --light-red: rgb(177, 43, 36);
     --light-red2: rgb(235, 107, 100);
     --light-yellow: rgb(251, 220, 106);
-    --light-green: rgb(100, 255, 121);
+    --light-green: rgba(63, 231, 85, 0.829);
 }
 *{
     box-sizing: border-box;
@@ -49,7 +49,8 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0px 5px 30px #888888
+    box-shadow: 0px 5px 30px #888888;
+    z-index: 1;
 }
 .logo {
     font-family: 'Dancing Script', cursive;
@@ -62,13 +63,14 @@ header{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 112px;
+    top: 114px;
     right: -10px;
     padding: 15px;
     padding-right: 30px;
     background-color: white;
     border-radius: 0 0 0 15px ;
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
 }
 .nav--mobile ul{
     display: flex;
@@ -83,9 +85,6 @@ nav ul {
 nav ul li {
     margin-left: 15px;
     font-size: 1.6rem;
-}
-.nav-link {
-    color: black;
 }
 .nav-link:hover {
     color: var(--light-red);
@@ -127,7 +126,7 @@ input[type='checkbox']:checked + .switch::after {
 }
 
 input[type='checkbox']:checked + .switch {
-    background-color: var(--black-1);
+    background-color: var(--light-red);
 }
 
 .offscreen {
@@ -208,8 +207,7 @@ main{
 /*? Projects */
 #Projects {
     width: 100%;
-    padding: 20px;
-    padding-right: 26px;
+    padding: 23px;
     /* box-shadow: 0px 5px 30px #888888; */
 }
 #Projects h2,
@@ -250,9 +248,11 @@ main{
     font-size: 1.8rem;
 }
 .is-responsive {
+    font-weight: bold;
     color: var(--green);
 }
 .isnt-responsive {
+    font-weight: bold;
     color: var(--light-red);
 }
 .links-container {
@@ -268,6 +268,7 @@ main{
     border-radius: 5px;
     text-align: center;
     font-size: 2rem;
+    transition: all .3s;
 }
 .links-container .repo {
     border: 1px solid var(--black-1);
@@ -318,7 +319,7 @@ main{
 /*? Footer  */
 footer {
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--red);
     color: white;
     padding: 24px;
     display: flex;
@@ -367,7 +368,51 @@ footer .social-media .linkedIn:hover {
 footer .social-media .twitter:hover {
     color: #00acee;
 } */
-
+/* ! Black theme */
+.black-theme {
+    color: white;
+    background-color: #151515;
+    transition: all .3s;
+    box-shadow: 0px 4px 8px rgb(0 0 0);
+}
+.black-theme .nav--mobile {
+    background-color: #151515;
+    box-shadow: 0px 4px 8px rgb(0 0 0);
+}
+.black-theme #Projects article {
+    box-shadow: 0px 4px 8px rgb(0 0 0);
+}
+.black-theme .nav-link,
+.black-theme a {
+    color: white;
+}
+.black-theme article h3,
+.black-theme .info .detail a,
+.black-theme .experience span, 
+.black-theme .nav-link:hover {
+    color: var(--light-red);
+}
+.black-theme .is-responsive {
+    color: var(--light-green);
+}
+.black-theme .links-container a {
+    border: 1px solid rgb(128, 128, 128);
+}
+.black-theme .links-container a:hover {
+    filter: invert(0);
+}
+.black-theme .links-container span {
+    filter: invert(1);
+}
+.black-theme .links-container .website:hover {
+    background-color: var(--light-red);
+}
+.black-theme .links-container a:hover {
+    background-color: var(--light-green);
+}
+.switch-theme {
+    transition: all .3s;
+}
 
 @media (max-width: 350px) {
     .info .title {
@@ -377,14 +422,3 @@ footer .social-media .twitter:hover {
         font-size: 1.8rem;
     }
 }
-/* 
-This effect is styling only the <label> element to look like a toggle switch, and hiding the actual <input> checkbox by positioning it offscreen. When clicking the label associated with the <input> element, it sets the <input> checkbox into the :checked state.
-
-The for attribute associates the <label> with the appropriate <input> checkbox element by its id.
-.switch::after defines a pseudo-element for the <label> to create the circular knob.
-input[type='checkbox']:checked + .switch::after targets the <label>'s pseudo-element's style when the checkbox is checked.
-transform: translateX(20px) moves the pseudo-element (knob) 20px to the right when the checkbox is checked.
-background-color: #7983ff; sets the background-color of the switch to a different color when the checkbox is checked.
-.offscreen moves the <input> checkbox element, which does not comprise any part of the actual toggle switch, out of the flow of document and positions it far away from the view, but does not hide it so it is accessible via keyboard and screen readers.
-transition: all 0.3s specifies all property changes will be transitioned over 0.3 seconds, therefore transitioning the <label>'s background-color and the pseudo-element's transform property when the checkbox is checked.
-*/
