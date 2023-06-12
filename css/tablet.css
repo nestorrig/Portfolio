@@ -68,6 +68,9 @@ footer .social-media {
     flex-direction: row;
     gap: 30px;
 }
+footer .social-media a {
+    margin-left: 0;
+}
 footer .social-media .social-item {
     padding-left: 20px;
     font-size: 3rem;

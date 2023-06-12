@@ -1,6 +1,7 @@
 :root {
     --black: #000000;
     --black-1: rgb(26, 26, 26);
+    --black-2: #242526;
     --red: rgb(118, 5, 4);
     --green: rgb(14, 118, 4);
     --light-red: rgb(177, 43, 36);
@@ -48,9 +49,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    color: white;
+    background-color: var(--black-1);
     box-shadow: 0px 5px 30px #888888;
     z-index: 1;
+}
+header a {
+    color: white;
 }
 .logo {
     font-family: 'Dancing Script', cursive;
@@ -67,7 +72,7 @@ header{
     right: -10px;
     padding: 15px;
     padding-right: 30px;
-    background-color: white;
+    background-color: var(--black-1);
     border-radius: 0 0 0 15px ;
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
     border-top: 2px solid rgba(0, 0, 0, 0.3);
@@ -95,6 +100,7 @@ nav ul li {
     top: calc(0% + 10px);
     width: 30px;
     height: 30px;
+    filter: invert(1);
     background-image: url(../assets/entypo_menu.svg);
 }
 .switch {
@@ -103,7 +109,7 @@ nav ul li {
     margin-top: 3px;
     width: 40px;
     height: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     transition: all 0.3s;
     cursor: pointer;
@@ -344,8 +350,10 @@ footer .social-media {
     align-items: center;
     justify-content: flex-end;
 }
+footer .social-media a {
+    margin-left: 60%;
+}
 footer .social-media .social-item {
-    display: flex;
     width: 40px;
     height: 40px;
     filter: invert(1);
@@ -359,32 +367,27 @@ footer .social-media .social-item {
 .twitter {
     background-image: url(../assets/mdi_twitter.svg);
 }
-/* footer .social-media .github:hover {
-    color:var(--light-green);
-}
-footer .social-media .linkedIn:hover {
-    color: #0e76a8;
-}
-footer .social-media .twitter:hover {
-    color: #00acee;
-} */
 /* ! Black theme */
 .black-theme {
     color: white;
-    background-color: #151515;
+    background-color: var(--black-2);
     transition: all .3s;
     box-shadow: 0px 4px 8px rgb(0 0 0);
 }
-.black-theme .nav--mobile {
-    background-color: #151515;
-    box-shadow: 0px 4px 8px rgb(0 0 0);
+header ~ .black-theme {
+    background-color: #18191a;
 }
-.black-theme #Projects article {
+.black-theme .nav--mobile {
+    background-color: var(--black-2);
     box-shadow: 0px 4px 8px rgb(0 0 0);
 }
 .black-theme .nav-link,
 .black-theme a {
     color: white;
+}
+.black-theme #Projects article {
+    background-color: var(--black-2);
+    box-shadow: 0px 4px 8px rgb(0 0 0);
 }
 .black-theme article h3,
 .black-theme .info .detail a,
