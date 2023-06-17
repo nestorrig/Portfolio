@@ -68,7 +68,7 @@ header a {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 114px;
+    top: 134px;
     right: -10px;
     padding: 15px;
     padding-right: 30px;
@@ -92,7 +92,8 @@ nav ul li {
     font-size: 1.6rem;
 }
 .nav-link:hover {
-    color: var(--light-red);
+    color: var(--light-red2);
+    transition: color .3s;
 }
 .icon-menu {
     position: absolute;
@@ -229,6 +230,7 @@ main{
     margin: 40px auto;
     width: 100%;
     max-width: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -247,17 +249,13 @@ main{
 .info-container h3 {
     margin-bottom: 8px;
     font-size: 2rem;
-    color: var(--red);
+    color: var(--light-red);
 }
 .info-container p:last-child {
     margin-top: 12px;
     font-size: 1.8rem;
 }
-.is-responsive {
-    font-weight: bold;
-    color: var(--green);
-}
-.isnt-responsive {
+.info-container p:last-child span{
     font-weight: bold;
     color: var(--light-red);
 }
@@ -276,26 +274,18 @@ main{
     font-size: 2rem;
     transition: all .3s;
 }
-.links-container .repo {
+.links-container a {
     border: 1px solid var(--black-1);
     color: var(--black-1);
 }
-.links-container .repo:hover {
+.links-container a:hover {
     filter: invert(1);;
-    background-color: rgb(241, 137, 251);
+    background-color: rgb(78, 212, 219);
 }
 .links-container .repo .repository {
     width: 30px;
     height: 30px;
     background-image: url(../assets/mdi_source-repository.svg);
-}
-.links-container .website {
-    border: 1px solid var(--black-1);
-    color: var(--black-1);
-}
-.links-container .website:hover {
-    filter: invert(1);
-    background-color: rgb(78, 212, 219);
 }
 .links-container .website .visit {
     width: 30px;
@@ -389,11 +379,15 @@ header ~ .black-theme {
     background-color: var(--black-2);
     box-shadow: 0px 4px 8px rgb(0 0 0);
 }
+.black-theme .projects-container {
+    color: rgba(255, 255, 255, 0.7);
+}
 .black-theme article h3,
 .black-theme .info .detail a,
 .black-theme .experience span, 
-.black-theme .nav-link:hover {
-    color: var(--light-red);
+.black-theme .nav-link:hover,
+.black-theme .info-container p span {
+    color: var(--light-red2);
 }
 .black-theme .is-responsive {
     color: var(--light-green);
@@ -411,7 +405,7 @@ header ~ .black-theme {
     background-color: var(--light-red);
 }
 .black-theme .links-container a:hover {
-    background-color: var(--light-green);
+    background-color: var(--light-red);
 }
 .switch-theme {
     transition: all .3s;
