@@ -91,9 +91,30 @@ nav ul li {
     margin-left: 15px;
     font-size: 1.6rem;
 }
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
 .nav-link:hover {
     color: var(--light-red2);
     transition: color .3s;
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--light-red2);
+    /* background: linear-gradient(to right, var(--red), var(--light-red), var(--light-red2)); */
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+.nav-link:hover::before {
+    transform: scaleX(1);
 }
 .icon-menu {
     position: absolute;
@@ -251,14 +272,6 @@ main{
     font-size: 2rem;
     color: var(--light-red);
 }
-.info-container p:last-child {
-    margin-top: 12px;
-    font-size: 1.8rem;
-}
-.info-container p:last-child span{
-    font-weight: bold;
-    color: var(--light-red);
-}
 .links-container {
     padding: 6px 12px 12px;
     display: flex;
@@ -272,25 +285,18 @@ main{
     border-radius: 5px;
     text-align: center;
     font-size: 2rem;
-    transition: all .3s;
+    /* transition: all .3s; */
 }
 .links-container a {
-    border: 1px solid var(--black-1);
-    color: var(--black-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    fill: rgba(0, 0, 0, 0.8);
 }
 .links-container a:hover {
-    filter: invert(1);;
-    background-color: rgb(78, 212, 219);
-}
-.links-container .repo .repository {
-    width: 30px;
-    height: 30px;
-    background-image: url(../assets/mdi_source-repository.svg);
-}
-.links-container .website .visit {
-    width: 30px;
-    height: 30px;
-    background-image: url(../assets/iconoir_internet.svg);
+    border: 2px solid var(--light-red);
+    fill: var(--light-red);
 }
 /*? Skills */
 #Skills {
@@ -299,16 +305,11 @@ main{
     padding-bottom: 50px;
     text-align: center;
 }
-.skills--container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
 .skills--container article {
     width: 100%;
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .skills--container article h3 {
     padding: 10px 0;
@@ -330,6 +331,8 @@ main{
 .skill-item svg {
     fill: var(--black);
     color: var(--black);
+    width: 100px;
+    height: 100px;
 }
 .skill-item svg:hover {
     fill: var(--light-red);
@@ -368,19 +371,14 @@ footer .social-media {
 footer .social-media a {
     margin-left: 60%;
 }
-footer .social-media .social-item {
-    width: 40px;
-    height: 40px;
-    filter: invert(1);
+footer .social-media svg{
+    width: 50px;
+    height: 50px;
+    fill: white;
 }
-.github {
-    background-image: url(../assets/mdi_github.svg);
-}
-.linkedIn {
-    background-image: url(../assets/bi_linkedin.svg);
-}
-.twitter {
-    background-image: url(../assets/mdi_twitter.svg);
+footer .social-media svg:hover{
+    fill: var(--light-red2);
+    transition: all .3s;
 }
 /* ! Black theme */
 .black-theme {
@@ -419,27 +417,22 @@ header ~ .black-theme {
 .black-theme .info-container p span {
     color: var(--light-red2);
 }
-.black-theme .is-responsive {
-    color: var(--light-green);
-}
 .black-theme .links-container a {
     border: 1px solid rgb(128, 128, 128);
+    fill: rgb(128, 128, 128);
 }
 .black-theme .links-container a:hover {
-    filter: invert(0);
-}
-.black-theme .links-container span {
-    filter: invert(1);
-}
-.black-theme .links-container .website:hover {
-    background-color: var(--light-red);
-}
-.black-theme .links-container a:hover {
-    background-color: var(--light-red);
+    border: 2px solid var(--light-red2);
+    fill: var(--light-red2);
 }
 .black-theme .skill-item svg {
     fill: rgb(255, 255, 255, 0.7);
     color: rgba(255, 255, 255, 0.7);
+}
+.black-theme .skill-item svg:hover {
+    fill: var(--light-red);
+    color: var(--light-red);
+    transition: all .3s;
 }
 .switch-theme {
     transition: all .3s;
