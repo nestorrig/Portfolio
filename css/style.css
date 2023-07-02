@@ -421,12 +421,6 @@ header ~ .black-theme {
     color: white;
 }
 .black-theme article h3,
-.black-theme article h3,
-.black-theme .info .detail a,
-.black-theme .experience span, 
-.black-theme article h3, 
-.black-theme .info .detail a,
-.black-theme .experience span, 
 .black-theme .nav-link:hover,
 .black-theme .info-container p span {
     color: var(--light-red2);
