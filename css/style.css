@@ -51,7 +51,6 @@ header{
     justify-content: space-between;
     color: white;
     background-color: var(--black-1);
-    box-shadow: 0px 5px 30px #888888;
     z-index: 1;
 }
 header a {
@@ -168,8 +167,10 @@ main{
 }
 /*? Bio */
 #Bio {
+    background-color: var(--light-red);
+    color: white;
     width: 100%;
-    padding: 12px;
+    padding: 20px 20px 30px;
     display: flex;
     justify-content: center;
 }
@@ -198,7 +199,7 @@ main{
     margin-bottom: 6px;
 }
 .info .detail a {
-    color: var(--red);
+    color: var(--black-1);
     text-decoration: underline;
     font-weight: 700;
 }
@@ -227,7 +228,7 @@ main{
     margin-right: 5px;
     font-size: 4rem;
     font-weight: bold;
-    color: var(--red);
+    color: var(--black-1);
 }
 .experience p {
     font-size: 1.6rem;
@@ -317,6 +318,9 @@ main{
     color: white;
     background-color: var(--light-red);
 }
+.soft-skills .skill-item p {
+    font-size: 2rem;
+}
 .skills-container--list {
     padding: 15px ;
     display: flex;
@@ -334,10 +338,15 @@ main{
     width: 100px;
     height: 100px;
 }
+.skill-item:hover,
 .skill-item svg:hover {
     fill: var(--light-red);
     color: var(--light-red);
-    transition: all .3s;
+    transition: all .15s;
+}
+.soft-skills .skill-item svg {
+    width: 40px;
+    height: 40px;
 }
 /*? Experience */
 /*? Footer  */
@@ -372,20 +381,17 @@ footer .social-media a {
     margin-left: 60%;
 }
 footer .social-media svg{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     fill: white;
-}
-footer .social-media svg:hover{
-    fill: var(--light-red2);
-    transition: all .3s;
 }
 /* ! Black theme */
 .black-theme {
     color: white;
     background-color: var(--black-2);
-    transition: all .3s;
-    box-shadow: 0px 4px 8px rgb(0 0 0);
+}
+header.black-theme {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 header ~ .black-theme {
     background-color: #18191a;
@@ -398,11 +404,15 @@ header ~ .black-theme {
 .black-theme a {
     color: white;
 }
+.black-theme .nav--mobile{
+    top: 135px;
+}
 .black-theme #Projects article,
 .black-theme #Skills .skills-container--list {
     background-color: var(--black-2);
     box-shadow: 0px 4px 8px rgb(0 0 0);
 }
+.black-theme h2,
 .black-theme .projects-container,
 .black-theme .skills--container {
     color: rgba(255, 255, 255, 0.7);
@@ -411,6 +421,10 @@ header ~ .black-theme {
     color: white;
 }
 .black-theme article h3,
+.black-theme article h3,
+.black-theme .info .detail a,
+.black-theme .experience span, 
+.black-theme article h3, 
 .black-theme .info .detail a,
 .black-theme .experience span, 
 .black-theme .nav-link:hover,
@@ -432,11 +446,11 @@ header ~ .black-theme {
 .black-theme .skill-item svg:hover {
     fill: var(--light-red);
     color: var(--light-red);
-    transition: all .3s;
+
 }
-.switch-theme {
+/* .switch-theme {
     transition: all .3s;
-}
+} */
 
 @media (max-width: 350px) {
     .info .title {
