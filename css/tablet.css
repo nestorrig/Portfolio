@@ -46,6 +46,11 @@ main {
 .info .detail p:first-child {
     margin-bottom: 10px;
 }
+.info .detail a:hover {
+    border-bottom: 3px solid var(--black-1);
+    padding: 5px 5px 0 0;
+    transition: all .1s;
+}
 #Projects h2 {
     margin-bottom: 32px;
 }
@@ -61,9 +66,17 @@ main {
     margin-bottom: 20px;
     max-width: 320px;
 }
+#Projects .projects-container article:hover {
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(230, 230, 230);
+}
 .skills--container article {
     width: 90%;
     max-width: 1000px;
+}
+.soft-skills .skill-item svg {
+    width: 100px;
+    height: 100px;
 }
 footer .message-container .logo {
     font-size: 6rem;
@@ -102,6 +115,10 @@ footer .social-media svg{
 }
 .black-theme {
     transition: all .3s;
+}
+.black-theme #Projects .projects-container article:hover {
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 40);
 }
 .switch-theme {
     transition: all .3s;

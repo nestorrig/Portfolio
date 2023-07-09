@@ -19,6 +19,9 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
 }
+body {
+    background-color: white;
+}
 /* elemental */
 img {
     width: 150px;
@@ -200,7 +203,6 @@ main{
 }
 .info .detail a {
     color: var(--black-1);
-    text-decoration: underline;
     font-weight: 700;
 }
 .profile-image {
@@ -254,7 +256,8 @@ main{
     max-width: 360px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3); */
+    background-color: rgb(240, 240, 240);
 }
 #Projects .projects-container article img {
     width: 100%;
@@ -292,12 +295,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     fill: rgba(0, 0, 0, 0.8);
+    background-color: white;
 }
 .links-container a:hover {
-    border: 2px solid var(--light-red);
-    fill: var(--light-red);
+    /* background-color: var(--light-red); */
+    border-color: rgba(0, 0, 0, 0.8);
+    fill: black;
+    transition: all .3s;
 }
 /*? Skills */
 #Skills {
@@ -311,6 +317,7 @@ main{
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     margin-bottom: 50px;
+    background-color: white;
 }
 .skills--container article h3 {
     padding: 10px 0;
@@ -426,12 +433,13 @@ header ~ .black-theme {
     color: var(--light-red2);
 }
 .black-theme .links-container a {
+    background-color: #18191a;
     border: 1px solid rgb(128, 128, 128);
     fill: rgb(128, 128, 128);
 }
 .black-theme .links-container a:hover {
-    border: 2px solid var(--light-red2);
-    fill: var(--light-red2);
+    border-color: #18191a;
+    fill: white;
 }
 .black-theme .skill-item svg {
     fill: rgb(255, 255, 255, 0.7);
