@@ -78,6 +78,9 @@ main {
     width: 100px;
     height: 100px;
 }
+footer {
+    flex-direction: row;
+}
 footer .message-container .logo {
     font-size: 6rem;
     margin-bottom: 8px;
@@ -88,9 +91,6 @@ footer .message-container .message {
 footer .social-media {
     flex-direction: row;
     gap: 30px;
-}
-footer .social-media a {
-    margin-left: 0;
 }
 footer .social-media .social-item {
     padding-left: 20px;
