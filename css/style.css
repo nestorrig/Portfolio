@@ -2,12 +2,10 @@
     --black: #000000;
     --black-1: rgb(26, 26, 26);
     --black-2: #242526;
+    --gray:#454545;
     --red: rgb(118, 5, 4);
-    --green: rgb(14, 118, 4);
     --light-red: rgb(177, 43, 36);
     --light-red2: rgb(235, 107, 100);
-    --light-yellow: rgb(251, 220, 106);
-    --light-green: rgba(63, 231, 85, 0.829);
 }
 *{
     box-sizing: border-box;
@@ -254,9 +252,8 @@ main{
     margin: 40px auto;
     width: 100%;
     max-width: 360px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    /* box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3); */
     background-color: rgb(240, 240, 240);
 }
 #Projects .projects-container article img {
@@ -295,15 +292,14 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    fill: rgba(0, 0, 0, 0.8);
-    background-color: white;
+    border: 1px solid rgb(240, 240, 240);
+    fill: white;
+    background-color: var(--gray);
 }
 .links-container a:hover {
-    /* background-color: var(--light-red); */
-    border-color: rgba(0, 0, 0, 0.8);
-    fill: black;
+    border-color: var(--gray);
     transition: all .3s;
+    fill: var(--light-red2);
 }
 /*? Skills */
 #Skills {
@@ -380,10 +376,12 @@ footer .message-container .message{
     font-size: 1.6rem;
 }
 footer .social-media {
+    width: 80%;
     display: flex;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 footer .social-media svg{
     width: 40px;

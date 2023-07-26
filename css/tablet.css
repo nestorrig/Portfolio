@@ -67,8 +67,10 @@ main {
     max-width: 320px;
 }
 #Projects .projects-container article:hover {
-    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: rgb(230, 230, 230);
+    border-color: var(--black-2);
+}
+.skills-container--list {
+    padding-inline: 140px;
 }
 .skills--container article {
     width: 90%;
@@ -89,8 +91,9 @@ footer .message-container .message {
     font-size: 2rem;
 }
 footer .social-media {
+    /* width: 100%; */
     flex-direction: row;
-    gap: 30px;
+    gap: 32px;
 }
 footer .social-media .social-item {
     padding-left: 20px;
