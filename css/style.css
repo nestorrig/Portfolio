@@ -1,11 +1,10 @@
 :root {
-    --black: #000000;
-    --black-1: rgb(26, 26, 26);
-    --black-2: #242526;
-    --gray:#454545;
-    --red: rgb(118, 5, 4);
-    --light-red: rgb(177, 43, 36);
-    --light-red2: rgb(235, 107, 100);
+    --dark: #111111;
+    --dark2: #181818;
+    --light: #fcfcfc;
+    --light2: #585858;
+    --primary-color:#a2101b;
+    --secondary-color: #f83a3a;
 }
 *{
     box-sizing: border-box;
