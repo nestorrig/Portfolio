@@ -230,3 +230,77 @@ p {
     width: 100%;
     height: 200px;
 }
+.skills__experience {
+    margin-block: 48px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            130px,
+            1fr
+        )
+    );
+    gap: 24px;
+}
+.skills__experience__item {
+    padding: 16px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.skills__experience__item span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.skills__experience__item p {
+    margin-top: 16px;
+    font-weight: 600;
+}
+.skills__experience__item.__years {
+    grid-column: 1/3;
+    /* background-color: aqua; */
+}
+.skills__experience__item.__years span {
+    font-size: 8rem;
+    font-weight: 900;
+}
+.skills__experience__item.__years p {
+    color: var(--light);
+}
+h2.skills__techs {
+    margin-bottom: 24px;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--light);
+}
+.skills__techs {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            130px,
+            1fr
+        )
+    );
+    gap: 24px;
+}
+.skills__techs__item {
+    padding: 16px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.skills__techs__item figure svg {
+    margin-bottom: 16px;
+    fill: var(--secondary-color);
+    width: 80px;
+    height: 80px;
+}
+.skills__techs__item:hover {
+    background: var(--gradient--dark);
+    color: var(--light);
+    & svg{
+        fill: var(--light);
+    }
+}
