@@ -182,9 +182,11 @@ p {
 /* Skills */
 .skills {
     position: relative;
+    padding-block: 72px;
 }
 .skills__background {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -195,4 +197,36 @@ p {
 }
 .skills .center{
     position: relative;
+}
+.skills__roles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            290px,
+            1fr
+        )
+    );
+    gap: 24px;
+}
+.skills__roles__item {
+    width: 100%;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.skills__roles__item:hover {
+    background: var(--gradient--dark);
+    color: var(--light);
+    transition: all .6s;
+}
+.skills__roles__item h2 {
+    font-size: 3rem;
+    color: var(--light);
+}
+.skills__roles__item figure {
+    width: 100%;
+    height: 200px;
 }
