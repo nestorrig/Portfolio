@@ -305,6 +305,9 @@ h2.skills__techs {
     }
 }
 /* Projects */
+.projects {
+    margin-bottom: -200px;
+}
 .projects__info {
     padding-block: 32px;
     display: flex;
@@ -350,4 +353,25 @@ h2.skills__techs {
 }
 .projects__item__links a:hover {
     color: var(--light2);
+}
+.contact {
+    height: 800px;
+    padding: 0 16px;
+}
+.contact > div {
+    padding-top: 300px;
+}
+.contact__box {
+    max-width: 800px;
+    padding: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+.contact__text h3 {
+    margin-bottom: 8px;
+    font-size: 4rem;
+    color: var(--light);
 }
