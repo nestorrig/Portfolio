@@ -304,3 +304,50 @@ h2.skills__techs {
         fill: var(--light);
     }
 }
+/* Projects */
+.projects__info {
+    padding-block: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.projects__info__text h2 {
+    margin-bottom: 8px;
+    font-size: 2.4rem;
+    color: var(--light);
+}
+.projects__box {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            290px,
+            1fr
+        )
+    );
+    gap: 24px;
+}
+.projects__item__image {
+    padding: 54px 16px;
+    height: 280px;
+}
+.projects__item__image img {
+    height: 100%;
+}
+.projects__item__image figcaption {
+    margin-top: 16px;
+    font-size: 2rem;
+    color: var(--light);
+}
+.projects__item__links {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.projects__item__links a:hover {
+    color: var(--light2);
+}
