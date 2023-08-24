@@ -11,7 +11,7 @@
 .switchTheme__box.in--desktop {
     display: block;
 }
-.header__menuIcon {
+.header__iconsBox {
     display: none;
 }
 .about .center {
@@ -70,5 +70,11 @@
                 1fr
             )
         );
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header {
+        justify-content: center;
+        gap: 330px;
     }
 }
