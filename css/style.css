@@ -357,11 +357,13 @@ h2.skills__techs {
 .contact {
     height: 800px;
     padding: 0 16px;
+    margin-bottom: -300px;
 }
 .contact > div {
     padding-top: 300px;
 }
 .contact__box {
+    position: relative;
     max-width: 800px;
     padding: 48px;
     display: flex;
@@ -374,4 +376,51 @@ h2.skills__techs {
     margin-bottom: 8px;
     font-size: 4rem;
     color: var(--light);
+}
+/* FOOTER */
+.footer__1 {
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+.footer__nav {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 8px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light);
+}
+.footer__nav a:hover {
+    color: var(--secondary-color);
+}
+.footer__2 .footer__list {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+.footer__list__logo {
+    width: 80px;
+}
+.footer__list__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.footer__list__social a {
+    padding: 8px;
+}
+.footer__list__social a:hover {
+    color: var(--light);
+    background-color: var(--dark);
+    border-radius: 100%;
+    transform: scale(1.1);
+    transition: all .3s;
 }
