@@ -115,6 +115,9 @@ p {
 .switchTheme__box.in--mobile {
     margin-right: auto;
 }
+.switchTheme__box.in--desktop {
+    display: none;
+}
 .switchTheme__icon {
     fill: var(--light);
 }
@@ -146,7 +149,7 @@ p {
     display: flex;
 }
 .header__nav.in--desktop {
-    flex-direction: row;
+    display: none;
 }
 .header__nav__item {
     font-size: 2rem;
@@ -171,13 +174,23 @@ p {
     background: var(--gradient--dark)
 }
 .about .center {
+    margin-top: 72px;
     background-color: var(--gradient--dark);
     display: flex;
     flex-direction: column-reverse;
     gap: 36px;
 }
+.about__image {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.about__image img {
+    object-position: top;
+}
+.about__info {
+    max-width: 500px;
+}
 .about__info h2 {
-    margin-top: 48px;
     margin-bottom: 8px;
     font-size: 3rem;
     color: var(--primary-color);
@@ -195,6 +208,7 @@ p {
 .skills {
     position: relative;
     padding-block: 72px;
+    padding-top: calc(var(--header-height) * 2);
 }
 .skills__background {
     position: absolute;
@@ -240,7 +254,7 @@ p {
 }
 .skills__roles__item figure {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
 }
 .skills__experience {
     margin-block: 48px;
@@ -314,14 +328,16 @@ h2.skills__techs {
     color: var(--light);
     & svg{
         fill: var(--light);
+        transition: all .6s;
     }
 }
 /* Projects */
 .projects {
+    padding-top: calc(var(--header-height) * 2);
     margin-bottom: -200px;
 }
 .projects__info {
-    padding-block: 32px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,7 +354,7 @@ h2.skills__techs {
     grid-template-columns: repeat(
         auto-fit,
         minmax(
-            290px,
+            280px,
             1fr
         )
     );
@@ -431,7 +447,12 @@ h2.skills__techs {
 .footer__list__social a:hover {
     color: var(--light);
     background-color: var(--dark);
-    border-radius: 100%;
+    border-radius: 50%;
     transform: scale(1.1);
-    transition: all .3s;
+    transition: all .5s;
+}
+@media screen and (min-width: 400px) {
+    .footer__1 {
+        height: 300px;
+    }
 }
