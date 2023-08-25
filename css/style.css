@@ -16,6 +16,9 @@
 .inactive {
     display: none !important;
 }
+.brightness {
+    filter: brightness(.5);
+}
 .bg__1 {
     background-color: var(--dark);
 }
@@ -79,29 +82,53 @@ p {
     position: fixed;
     bottom: 0;
     height: calc(100vh - var(--header-height));
-    width: 60%;
-    max-width: 300px;
+    width: 60vw;
     padding: 48px 36px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--primary-color);
+    left: calc(0px - 60vw);
+    animation: show-menu linear both ;
+    animation-duration: .3s;
 }
-.header__closeMenu {
-    width: 50px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    &:hover {
-        background-color: var(--dark3);
+@keyframes show-menu {
+    to {
+        left: 0px;
     }
 }
-.header__closeMenu svg {
+.hide-menu{
+    animation: hideMenu linear both ;
+    animation-duration: .3s;
+}
+@keyframes hideMenu {
+    0% {
+        left: 0px;
+    }
+}
+.header__closeMenu, .header__menuIcon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark3);
+    border-radius: 50%;
+    animation: rotate-icon linear both ;
+    animation-duration: .3s;
+}
+@keyframes rotate-icon {
+    to {
+        transform: rotate(180deg);
+    }
+}
+.header__closeMenu svg, .header__menuIcon svg {
     margin: auto;
     fill: var(--light);
     width: 24px;
     height: 24px;
+}
+.header__menuIcon svg {
+    width: 36px;
+    height: 36px;
 }
 .mobileMenu .header__nav.in--mobile { /* .in--mobile, tambien solo asi  */
     flex-direction: column;
@@ -159,12 +186,6 @@ p {
     color: var(--light);
     &:hover {
         color: var(--dark3);
-    }
-}
-.header__menuIcon svg {
-    fill: var(--light);
-    &:hover {
-        fill: var(--primary-color);
     }
 }
 /*? MAIN: SECTIONS*/

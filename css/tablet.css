@@ -1,3 +1,9 @@
+.brightness {
+    filter: brightness(1);
+}
+.mobileMenu {
+    display: none;
+}
 .header__nav.in--desktop {
     display: flex;
     gap: 24px;
