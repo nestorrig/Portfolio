@@ -117,7 +117,7 @@ p {
 }
 @keyframes rotate-icon {
     to {
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
 }
 .header__closeMenu svg, .header__menuIcon svg {
@@ -148,6 +148,8 @@ p {
 }
 .switchTheme__icon {
     fill: var(--light);
+    animation: rotate-icon linear both ;
+    animation-duration: .3s;
 }
 /* header */
 .header {
