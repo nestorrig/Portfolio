@@ -47,6 +47,6 @@ function switchTheme() {
         btn.classList.toggle("inactive")
     }
     for (const e of switchElements) {
-        e.classList.toggle("blackThemeñ")
+        e.classList.toggle("lightTheme")
     }
 }

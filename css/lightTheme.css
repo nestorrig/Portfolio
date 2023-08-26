@@ -1,0 +1,72 @@
+.lightTheme {
+    
+}
+.lightTheme h1,
+.lightTheme h2,
+.lightTheme h3  {
+    color: var(--dark);
+}
+.lightTheme .bg__1 {
+    background-color: var(--light);
+}
+.lightTheme .bg__2 {
+    background-color: var(--light2);
+}
+.lightTheme .bg__3 {
+    background-color: var(--light3);
+}
+.lightTheme.mobileMenu {
+    background-color: var(--secondary-color);
+    background-color: var(--text-color);
+    background-color: var(--light2);
+}
+.lightTheme.header {
+    animation: ajust-header-light linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+}
+@keyframes ajust-header-light{
+    to {
+        background-color: var(--light);
+        border-bottom: 2px solid var(--text-color);
+    }
+}
+.lightTheme .header__closeMenu, .lightTheme .header__menuIcon {
+    background-color: var(--light3);
+    & svg {
+        fill: var(--text-color);
+    }
+}
+.lightTheme .header__nav__item {
+    color: var(--dark3);
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+.lightTheme .switchTheme__icon {
+    fill: var(--dark3);
+}
+.lightTheme .about {
+    background: var(--gradient--light);
+}
+.lightTheme .skills__roles__item:hover {
+    background: var(--gradient--light);
+    color: var(--dark);
+}
+.lightTheme .skills__experience__item p {
+    color: var(--dark);
+}
+.lightTheme .skills__experience__item.__years h2 {
+    color: var(--dark);
+}
+.lightTheme .skills__techs__item:hover {
+    background: var(--gradient--light);
+    color: var(--dark);
+    & svg{
+        fill: var(--dark);
+    }
+}
+.lightTheme .footer__list__social a:hover {
+    color: var(--dark3);
+    background-color: var(--light);
+}
