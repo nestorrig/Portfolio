@@ -208,10 +208,12 @@ p {
     gap: 36px;
 }
 .about__image {
-    max-width: 320px;
+    min-width: 300px;
     margin: 0 auto;
 }
 .about__image img {
+    margin-top: -140px;
+    height: 500px;
     object-position: top;
 }
 .about__info {

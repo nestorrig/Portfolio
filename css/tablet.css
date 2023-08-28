@@ -22,7 +22,8 @@
     align-items: end;
 }
 .about__image {
-    max-height: 300px;
+    min-width: 360px;
+    max-width: 400px;
 }
 .about__info {
     margin-bottom: 48px;
