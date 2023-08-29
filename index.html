@@ -21,6 +21,9 @@
 <body>
     <div class="mobileMenu hide-menu z__3 switch-theme" id="MobileMenu">
         <nav class="header__nav in--mobile">
+            <figure class="header__logo">
+                <img src="./src/assets/Logo.webp" alt="Logo">
+            </figure>
             <a class="header__nav__item header__nav__item--mobile" href="#About">About me</a>
             <a class="header__nav__item header__nav__item--mobile" href="#Skills">Skills</a>
             <a class="header__nav__item header__nav__item--mobile" href="#Projects">Projects</a>
@@ -35,9 +38,20 @@
             </svg>
         </button>
     </div>
-
+    <div class="header__iconsBox z__3 switch-theme" id="MenuButtons">
+        <button class="header__menuIcon header__menuIcon--open" id="OpenMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                <path d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1z"></path>
+            </svg>
+        </button>
+        <button class="header__menuIcon header__menuIcon--close inactive" id="CloseMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256">
+                <path d="M208.49 191.51a12 12 0 0 1-17 17L128 145l-63.51 63.49a12 12 0 0 1-17-17L111 128L47.51 64.49a12 12 0 0 1 17-17L128 111l63.51-63.52a12 12 0 0 1 17 17L145 128Z"></path>
+            </svg>
+        </button>
+    </div>
     <header class="header switch-theme">
-        <figure class="header__logo">
+        <figure class="header__logo header__logo__desktop">
             <img src="./src/assets/Logo.webp" alt="Logo">
         </figure>
         <nav class="header__nav in--desktop">
@@ -54,18 +68,6 @@
                 <path d="M235.54 150.21a104.84 104.84 0 0 1-37 52.91A104 104 0 0 1 32 120a103.09 103.09 0 0 1 20.88-62.52a104.84 104.84 0 0 1 52.91-37a8 8 0 0 1 10 10a88.08 88.08 0 0 0 109.8 109.8a8 8 0 0 1 10 10Z"></path>
             </svg>
         </button>
-        <div class="header__iconsBox" id="MenuButtons">
-            <button class="header__menuIcon header__menuIcon--open" id="OpenMenu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
-                    <path d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1z"></path>
-                </svg>
-            </button>
-            <button class="header__menuIcon header__menuIcon--close inactive" id="CloseMenu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256">
-                    <path d="M208.49 191.51a12 12 0 0 1-17 17L128 145l-63.51 63.49a12 12 0 0 1-17-17L111 128L47.51 64.49a12 12 0 0 1 17-17L128 111l63.51-63.52a12 12 0 0 1 17 17L145 128Z"></path>
-                </svg>
-            </button>
-        </div>
     </header>
 
     <main class="switch-theme">

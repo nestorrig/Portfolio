@@ -29,9 +29,9 @@
     }
 }
 .lightTheme .header__closeMenu, .lightTheme .header__menuIcon {
-    background-color: var(--light3);
+    background-color: var(--dark3);
     & svg {
-        fill: var(--text-color);
+        fill: var(--light3);
     }
 }
 .lightTheme .header__nav__item {
