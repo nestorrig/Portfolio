@@ -9,10 +9,32 @@
     --primary-color:#a2101b;
     --secondary-color: #f83a3a;
     --gradient--color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    --gradient--dark: linear-gradient(60deg, var(--dark) 30%, var(--dark3) 100%);
-    --gradient--light: linear-gradient(30deg, var(--light), var(--light3));
+    --gradient--dark: linear-gradient(90deg, var(--dark) 40%, var(--dark2) 100%);
+    --gradient--light: linear-gradient(90deg, var(--light) 40%, var(--light2) 100%);
     --header-height: 70px;
     --font-size: 1.7rem;
+}
+/* Animations */
+@keyframes showMenu {
+    to {
+        left: 0px;
+    }
+}
+@keyframes hideMenu {
+    0% {
+        left: 0px;
+    }
+}
+@keyframes rotate-icon {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes ajust-header {
+    to {
+        background-color: var(--dark);
+        border-bottom: 2px solid var(--text-color);
+    }
 }
 /* principal styles */
 .inactive {
@@ -55,13 +77,13 @@
     width: 180px;
     height: 50px;
     padding: 8px;
-    & a {
-        padding: 8px;
-        background-color: var(--dark2);
-    }
-    &:hover a {
-        background-color: transparent;
-        transition: all .3s;
+
+    &:hover {
+        background: var(--gradient--dark) ;
+        & a {
+            color: var(--text-color);
+            transition: all .3s;
+        }
     }
     &:active {
         transform: scale(.9);
@@ -92,22 +114,6 @@ p {
     justify-content: space-between;
     background-color: var(--dark3);
     left: calc(0px - 60vw);
-    animation: show-menu linear both ;
-    animation-duration: .3s;
-}
-@keyframes show-menu {
-    to {
-        left: 0px;
-    }
-}
-.hide-menu{
-    animation: hideMenu linear both ;
-    animation-duration: .3s;
-}
-@keyframes hideMenu {
-    0% {
-        left: 0px;
-    }
 }
 .header__closeMenu, .header__menuIcon {
     width: 50px;
@@ -117,22 +123,17 @@ p {
     animation: rotate-icon linear both ;
     animation-duration: .3s;
 }
-@keyframes rotate-icon {
-    to {
-        transform: rotate(360deg);
-    }
-}
-.header__closeMenu svg, .header__menuIcon svg {
+.header__menuIcon svg {
     margin: auto;
     fill: var(--light);
     width: 24px;
     height: 24px;
 }
-.header__menuIcon svg {
+.header__menuIcon--open svg {
     width: 36px;
     height: 36px;
 }
-.mobileMenu .header__nav.in--mobile { /* .in--mobile, tambien solo asi  */
+.mobileMenu .in--mobile {
     flex-direction: column;
     width: 100%;
     gap: 48px;
@@ -151,8 +152,6 @@ p {
 .switchTheme__icon {
     fill: var(--light);
     cursor: pointer;
-    animation: rotate-icon linear both ;
-    animation-duration: .3s;
 }
 /* header */
 .header {
@@ -168,12 +167,6 @@ p {
     animation: ajust-header linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
-}
-@keyframes ajust-header {
-    to {
-        background-color: var(--dark);
-        border-bottom: 2px solid var(--text-color);
-    }
 }
 .header .header__logo {
     width: 36px;

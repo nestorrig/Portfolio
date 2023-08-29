@@ -26,17 +26,17 @@ function switchButtons() {
     closeMenu.classList.toggle("inactive")
 }
 function showOrHideMenu() {
-    const test = mobileMenu.classList.contains("hide-menu")
+    const test = closeMenu.classList.contains("inactive")
     if (test) {
-        mobileMenu.classList.remove("hide-menu")
+        mobileMenu.style.animation = 'showMenu .3s linear both'
         main.classList.add("brightness")
     } else {
-        mobileMenu.classList.add("hide-menu")
+        mobileMenu.style.animation = 'hideMenu .3s linear both'
         main.classList.remove("brightness")
     }
     switchButtons()
     main.addEventListener("click", ()=> {
-        mobileMenu.classList.add("hide-menu")
+        mobileMenu.style.animation = 'hideMenu .3s linear both'
         main.classList.remove("brightness")
         openMenu.classList.remove("inactive")
         closeMenu.classList.add("inactive")
@@ -45,6 +45,9 @@ function showOrHideMenu() {
 function switchTheme() {
     for (const btn of themeButtons) {
         btn.classList.toggle("inactive")
+        if (!btn.classList.contains("inactive")) {
+            btn.style.animation = 'rotate-icon .3s linear both'
+        }
     }
     for (const e of switchElements) {
         e.classList.toggle("lightTheme")
