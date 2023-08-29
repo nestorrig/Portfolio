@@ -25,7 +25,6 @@
 @keyframes ajust-header-light{
     to {
         background-color: var(--light);
-        border-bottom: 2px solid var(--text-color);
     }
 }
 .lightTheme .header__closeMenu, .lightTheme .header__menuIcon {

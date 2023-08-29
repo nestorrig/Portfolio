@@ -33,7 +33,6 @@
 @keyframes ajust-header {
     to {
         background-color: var(--dark);
-        border-bottom: 2px solid var(--text-color);
     }
 }
 /* principal styles */
