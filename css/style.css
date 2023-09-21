@@ -11,7 +11,7 @@
     --gradient--color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     --gradient--dark: linear-gradient(90deg, var(--dark) 40%, var(--dark2) 100%);
     --gradient--light: linear-gradient(90deg, var(--light) 40%, var(--light2) 100%);
-    --header-height: 70px;
+    --header-height: 54px;
     --font-size: 1.7rem;
 }
 /* Animations */
@@ -76,18 +76,16 @@
     width: 180px;
     height: 50px;
     padding: 8px;
-
     &:hover {
-        background: var(--gradient--dark) ;
+        border-radius: 16px;
         & a {
-            color: var(--text-color);
-            transition: all .3s;
+            background-color: transparent;
         }
     }
     &:active {
         transform: scale(.9);
-        transition: transform .3s;
     }
+    transition: all .4s;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -104,7 +102,7 @@ p {
 .mobileMenu {
     position: fixed;
     bottom: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 60vw;
     padding: 48px 36px;
     padding-top: calc(var(--header-height) * 2);
@@ -138,15 +136,15 @@ p {
     width: 36px;
     height: 36px;
 }
-.mobileMenu .in--mobile {
+.mobileMenu .header__nav.in--mobile {
     flex-direction: column;
     width: 100%;
     gap: 48px;
 }
 /* switch theme buttons */
 .switchTheme__box {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 .switchTheme__box.in--mobile {
     margin-right: auto;
@@ -155,6 +153,7 @@ p {
     display: none;
 }
 .switchTheme__icon {
+    height: auto;
     fill: var(--light);
     cursor: pointer;
 }
@@ -163,7 +162,7 @@ p {
     display: none;
 }
 .header__logo {
-    width: 36px;
+    width: 30px;
 }
 .header__logo__desktop {
     display: none;
