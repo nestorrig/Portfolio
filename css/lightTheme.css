@@ -42,6 +42,9 @@
 .lightTheme .switchTheme__icon {
     fill: var(--dark3);
 }
+.lightTheme .svg__logo img {
+    filter: brightness(.179);
+}
 .lightTheme .about {
     background: var(--gradient--light);
 }

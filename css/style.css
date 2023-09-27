@@ -103,7 +103,7 @@ p {
     position: fixed;
     bottom: 0;
     height: 100dvh;
-    width: 60vw;
+    width: 70vw;
     padding: 48px 36px;
     padding-top: calc(var(--header-height) * 2);
 
@@ -111,7 +111,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--dark3);
-    left: calc(0px - 60vw);
+    left: calc(0px - 70vw);
 }
 .header__iconsBox {
     position: fixed;
@@ -161,8 +161,9 @@ p {
 .header {
     display: none;
 }
-.header__logo {
-    width: 30px;
+.header__logo__mobile{
+    width: 100%;
+    max-width: 250px;
 }
 .header__logo__desktop {
     display: none;
@@ -429,11 +430,21 @@ h2.skills__techs {
     justify-content: center;
     align-items: end;
 }
+.footer__2 .footer__list__logo {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+}
+.footer__2 .footer__list__logo img {
+    height: 100%;
+}
 .footer__2 .footer__list {
     padding: 24px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    gap: 48px;
 }
 .footer__list__social {
     display: flex;

@@ -20,6 +20,7 @@
 }
 .header__logo__desktop {
     display: block;
+    width: 40px;
 }
 .header__nav.in--desktop {
     display: flex;
