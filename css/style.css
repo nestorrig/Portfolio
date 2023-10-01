@@ -104,8 +104,8 @@ p {
     bottom: 0;
     height: 100dvh;
     width: 70vw;
-    padding: 48px 36px;
-    padding-top: calc(var(--header-height) * 2);
+    padding: 48px 24px;
+    padding-top: calc(var(--header-height) * 1.5);
 
     display: flex;
     flex-direction: column;
@@ -164,6 +164,10 @@ p {
 .header__logo__mobile{
     width: 100%;
     max-width: 250px;
+    height: 200px;
+    & img {
+        height: 100%;
+    }
 }
 .header__logo__desktop {
     display: none;
@@ -380,10 +384,11 @@ h2.skills__techs {
 }
 .projects__item__image {
     padding: 54px 16px;
-    height: 280px;
+    height: 300px;
 }
 .projects__item__image img {
     height: 100%;
+    object-position: top;
 }
 .projects__item__image figcaption {
     margin-top: 16px;
