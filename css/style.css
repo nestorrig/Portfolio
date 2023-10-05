@@ -36,6 +36,14 @@
     }
 }
 /* principal styles */
+::-moz-selection {
+    color: var(--dark3);
+    background-color: var(--light);
+}
+::selection {
+    background-color: var(--light);
+    color: var(--dark3);
+}
 .inactive {
     display: none !important;
 }

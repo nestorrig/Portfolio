@@ -1,3 +1,11 @@
+.lightTheme ::-moz-selection {
+    background-color: var(--dark3);
+    color: var(--light3);
+}
+.lightTheme ::selection {
+    background-color: var(--dark3);
+    color: var(--light3);
+}
 .lightTheme h1,
 .lightTheme h2,
 .lightTheme h3  {
