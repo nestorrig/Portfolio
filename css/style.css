@@ -163,8 +163,8 @@ p {
 }
 .header__logo__mobile{
     width: 100%;
-    max-width: 250px;
-    height: 200px;
+    max-width: 200px;
+    height: 140px;
     & img {
         height: 100%;
     }
@@ -249,17 +249,13 @@ p {
 }
 .skills__roles {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            290px,
-            1fr
-        )
-    );
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .skills__roles__item {
+    flex-basis: 280px;
+    flex-grow: 1;
     width: 100%;
     padding: 36px;
     display: flex;
@@ -271,13 +267,18 @@ p {
     color: var(--light);
     transition: all .6s;
 }
-.skills__roles__item h2 {
-    font-size: 3rem;
-    color: var(--light);
-}
 .skills__roles__item figure {
     width: 100%;
-    /* height: 200px; */
+    height: 200px;
+}
+.skills__roles__item .roles__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.roles__text h2 {
+    font-size: 3.2rem;
+    color: var(--light);
 }
 .skills__experience {
     margin-block: 48px;
@@ -323,17 +324,13 @@ h2.skills__techs {
     color: var(--light);
 }
 .skills__techs {
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            130px,
-            1fr
-        )
-    );
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .skills__techs__item {
+    flex-basis: 130px;
+    flex-grow: 1;
     padding: 16px;
     display: grid;
     place-content: center;
@@ -408,7 +405,7 @@ h2.skills__techs {
 .contact {
     height: 800px;
     padding: 0 16px;
-    margin-bottom: -300px;
+    margin-bottom: -284px;
 }
 .contact > div {
     padding-top: 300px;
@@ -424,7 +421,7 @@ h2.skills__techs {
     gap: 48px;
 }
 .contact__text h3 {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     font-size: 4rem;
     color: var(--light);
 }
@@ -455,15 +452,15 @@ h2.skills__techs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 0px 52px;
 }
 .footer__list__social a {
     padding: 8px;
+    transition: all .5s;
 }
 .footer__list__social a:hover {
     color: var(--light);
     background-color: var(--dark);
     border-radius: 50%;
     transform: scale(1.1);
-    transition: all .5s;
 }

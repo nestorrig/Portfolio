@@ -47,7 +47,6 @@
     margin-bottom: 48px;
 }
 .skills__roles__item:last-child {
-    grid-column: 1/3;
     flex-direction: row;
     height: auto;
 }
@@ -57,14 +56,8 @@
 .skills__experience__item.__years {
     grid-row: 1/3;
 }
-.skills__techs {
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            190px,
-            1fr
-        )
-    );
+.skills__techs__item {
+    flex-basis: 180px;
 }
 .contact {
     margin-bottom: -400px;
@@ -72,26 +65,19 @@
 .footer__1 {
     height: 300px;
 }
+.footer__2 {
+    height: 132px;
+    display: flex;
+}
 .footer__nav {
     display: none;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 920px) {
     .skills__roles__item:last-child {
-        grid-column: auto;
         flex-direction: column;
-        height: auto;
     }
     .skills__roles__item figure {
-        height: 240px;
-    }
-    .skills__techs {
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                220px,
-                1fr
-            )
-        );
+        height: 212px;
     }
 }
 @media screen and (min-width: 1200px) {
