@@ -279,7 +279,7 @@ p {
     padding: 36px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 36px;
 }
 .skills__roles__item:hover {
     background: var(--gradient--dark);
@@ -288,7 +288,7 @@ p {
 }
 .skills__roles__item figure {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 .skills__roles__item .roles__text {
     display: flex;

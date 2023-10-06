@@ -54,6 +54,9 @@
     flex-direction: row;
     height: auto;
 }
+.skills__roles__item:nth-child(-n+2) figure {
+    height: 240px;
+}
 .skills__experience {
     grid-template-columns: repeat(4,1fr);
 }
@@ -70,18 +73,20 @@
     height: 300px;
 }
 .footer__2 {
-    height: 132px;
     display: flex;
 }
 .footer__nav {
     display: none;
 }
+.footer__2 .footer__list {
+    padding: 56px;
+}
 @media screen and (min-width: 920px) {
     .skills__roles__item:last-child {
         flex-direction: column;
     }
-    .skills__roles__item figure {
-        height: 212px;
+    .skills__roles__item:nth-child(n) figure {
+        height: 200px;
     }
 }
 @media screen and (min-width: 1200px) {
