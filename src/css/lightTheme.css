@@ -45,6 +45,12 @@
     color: var(--dark3);
     &:hover {
         color: var(--secondary-color);
+        & path {
+            stroke: var(--secondary-color);
+        }
+    }
+    & path {
+        stroke: var(--dark3);
     }
 }
 .lightTheme .switchTheme__icon {

@@ -24,7 +24,11 @@
 }
 .header__nav.in--desktop {
     display: flex;
+    align-items: center;
     gap: 24px;
+    .containCV {
+        align-items: normal;
+    }
 }
 .header__nav__item {
     font-size: 1.6rem;

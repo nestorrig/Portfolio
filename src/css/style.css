@@ -147,7 +147,7 @@ p {
 .mobileMenu .header__nav.in--mobile {
     flex-direction: column;
     width: 100%;
-    gap: 48px;
+    gap: 36px;
 }
 /* switch theme buttons */
 .switchTheme__box {
@@ -193,6 +193,17 @@ p {
     color: var(--light);
     &:hover {
         color: var(--secondary-color);
+        & path {
+            stroke: var(--secondary-color);
+        }
+    }
+    &.containCV {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        & svg {
+            width: auto;
+        }
     }
 }
 /*? MAIN: SECTIONS*/
