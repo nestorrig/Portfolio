@@ -29,9 +29,38 @@
     .containCV {
         align-items: normal;
     }
-}
-.header__nav__item {
-    font-size: 1.6rem;
+    > div {
+        width: auto;
+        padding: 4px 8px;
+
+        &:hover .header__nav__item {
+            /* border-bottom: 2px solid var(--primary-color); */
+            color: var(--secondary-color);
+            animation: expand .3s linear;
+            &::after {
+                transform: scaleX(100%);
+            }
+            & path {
+                stroke: var(--secondary-color);
+            }
+        }
+        .header__nav__item {
+            position: relative;
+            font-size: 1.6rem;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                transform: scaleX(0);
+                background-color: var(--secondary-color);
+                transition: transform .5s;
+            }
+            transition: all .5s;
+        }
+    }
 }
 .switchTheme__box.in--desktop {
     display: block;
@@ -80,6 +109,12 @@
 }
 .footer__2 .footer__list {
     padding: 56px;
+}
+.footer__list__social div:hover > a {
+    animation:shake-left-right 0.8s linear both;
+    & svg {
+        animation: socialIcon 1s linear;
+    }
 }
 @media screen and (min-width: 920px) {
     .skills__roles__item:last-child {

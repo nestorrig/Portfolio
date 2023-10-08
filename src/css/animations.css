@@ -1,0 +1,54 @@
+@keyframes showMenu {
+    to {
+        left: 0px;
+    }
+}
+@keyframes hideMenu {
+    0% {
+        left: 0px;
+    }
+}
+@keyframes rotate-icon {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes ajust-header {
+    to {
+        background-color: var(--dark);
+    }
+}
+@keyframes expand {
+    0% {
+        transform: scale(.2) translate(0, 2px);
+    }
+    50% {
+        transform: scale(.7) translate(0, -2px);
+    }
+    100% {
+        transform: scale(1) translate(0);
+    }
+}
+@keyframes socialIcon {
+    0% {transform: scale(.2) translate(0, 8px);}
+    25% {transform: translate(-4px, 2px);}
+    50% {transform: scale(.5) translate(4px, 0px);}
+    75% {transform: scale(.8) translate(0px, -4px);}
+    100% {transform: scale(1) translate(0);}
+}
+@keyframes shake-left-right{
+    0%,100%{transform:rotate(0deg);transform-origin:50% 50%}
+    10%{transform:rotate(8deg)}
+    20%,40%,60%{transform:rotate(-10deg)}
+    30%,50%,70%{transform:rotate(10deg)}
+    80%{transform:rotate(-8deg)}
+    90%{transform:rotate(8deg)}
+}
+@keyframes jello-horizontal{
+    0%{transform:scale3d(1,1,1)}
+    30%{transform:scale3d(1.15,.95,1)}
+    40%{transform:scale3d(.85,1.05,1)}
+    50%{transform:scale3d(1.15,.85,1)}
+    65%{transform:scale3d(.95,1.05,1)}
+    75%{transform:scale3d(1.05,.95,1)}
+    100%{transform:scale3d(1,1,1)}}

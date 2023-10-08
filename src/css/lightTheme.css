@@ -84,7 +84,7 @@
         fill: var(--light);
     }
 }
-.lightTheme .footer__list__social a:hover {
-    color: var(--dark3);
-    background-color: var(--light);
+.lightTheme .footer__list__social div:hover > a {
+    color: var(--light3);
+    background-color: var(--text-color);
 }

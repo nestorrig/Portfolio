@@ -14,27 +14,7 @@
     --header-height: 54px;
     --font-size: 1.7rem;
 }
-/* Animations */
-@keyframes showMenu {
-    to {
-        left: 0px;
-    }
-}
-@keyframes hideMenu {
-    0% {
-        left: 0px;
-    }
-}
-@keyframes rotate-icon {
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes ajust-header {
-    to {
-        background-color: var(--dark);
-    }
-}
+
 /* principal styles */
 ::-moz-selection {
     color: var(--dark3);
@@ -86,12 +66,10 @@
     padding: 8px;
     &:hover {
         border-radius: 16px;
-        & a {
-            background-color: transparent;
-        }
+        animation: jello-horizontal 1s linear both;
     }
     &:active {
-        transform: scale(.9);
+        scale: .9;
     }
     transition: all .4s;
 }
@@ -285,6 +263,9 @@ p {
     background: var(--gradient--dark);
     color: var(--light);
     transition: all .6s;
+    &:nth-child(1) h2 {
+        animation: shake-left-right 1s infinite;
+    }
 }
 .skills__roles__item figure {
     width: 100%;
@@ -477,9 +458,8 @@ h2.skills__techs {
     padding: 8px;
     transition: all .5s;
 }
-.footer__list__social a:hover {
-    color: var(--light);
-    background-color: var(--dark);
+.footer__list__social div:hover >  a {
+    color: var(--dark3);
+    background-color: var(--text-color);
     border-radius: 50%;
-    transform: scale(1.1);
 }
