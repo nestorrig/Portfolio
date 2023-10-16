@@ -111,7 +111,7 @@
     padding: 56px;
 }
 .footer__list__social div:hover > a {
-    animation:shake-left-right 0.8s linear both;
+    /* animation:shake-left-right 0.8s linear both; */
     & svg {
         animation: socialIcon 1s linear;
     }

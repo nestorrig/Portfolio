@@ -30,11 +30,11 @@
     }
 }
 @keyframes socialIcon {
-    0% {transform: scale(.2) translate(0, 8px);}
-    25% {transform: translate(-4px, 2px);}
-    50% {transform: scale(.5) translate(4px, 0px);}
-    75% {transform: scale(.8) translate(0px, -4px);}
-    100% {transform: scale(1) translate(0);}
+    0% {transform: scale(.1) translateX(48px);}
+    0%, 25% {transform: scale(.3) translateX(30px);}
+    25%, 50% {transform: scale(1) translateX(0px);}
+    50%, 75% {transform: scale(.5) translateX(-32px);}
+    75%, 100% {transform: scale(1) translateX(0);}
 }
 @keyframes shake-left-right{
     0%,100%{transform:rotate(0deg);transform-origin:50% 50%}
