@@ -20,9 +20,7 @@
 .lightTheme .bg__3 {
     background-color: var(--light3);
 }
-.lightTheme.mobileMenu {
-    background-color: var(--secondary-color);
-    background-color: var(--text-color);
+.lightTheme.menu {
     background-color: var(--light2);
 }
 .lightTheme.header {
@@ -35,13 +33,13 @@
         background-color: var(--light);
     }
 }
-.lightTheme .header__closeMenu, .lightTheme .header__menuIcon {
+.lightTheme .menuButtons__item {
     background-color: var(--dark3);
-    & svg {
-        fill: var(--light3);
-    }
 }
-.lightTheme .header__nav__item {
+.lightTheme .menuButtons__icon {
+    fill: var(--light3);
+}
+.lightTheme .navBar__item {
     color: var(--dark3);
     &:hover {
         color: var(--secondary-color);

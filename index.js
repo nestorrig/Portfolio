@@ -7,7 +7,7 @@ const openMenu = document.getElementById('OpenMenu')
 const closeMenu = document.getElementById('CloseMenu')
 const mobileMenu = document.getElementById('MobileMenu')
 
-const themeBoxes = document.getElementsByClassName('switchTheme__box')
+const themeBoxes = document.getElementsByClassName('switchTheme')
 const themeButtons = document.getElementsByClassName('switchTheme__icon')
 
 
