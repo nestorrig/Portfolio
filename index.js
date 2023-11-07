@@ -1,6 +1,6 @@
 const main = document.querySelector('main')
 const switchElements = document.getElementsByClassName("switch-theme");
-const navItems = document.getElementsByClassName('header__nav__item--mobile')
+const navItems = document.getElementsByClassName('navBar__item')
 
 const menuButtons = document.getElementById('MenuButtons')
 const openMenu = document.getElementById('OpenMenu')
