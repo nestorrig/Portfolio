@@ -182,16 +182,15 @@ p {
 }
 .about .center {
     margin-top: 72px;
-    background-color: var(--gradient--dark);
     display: flex;
     flex-direction: column-reverse;
     gap: 36px;
 }
-.about__image {
+.about__imgContainer {
     min-width: 300px;
     margin: 0 auto;
 }
-.about__image img {
+.about__img{
     margin-top: -100px;
     height: 500px;
     object-position: top;
@@ -199,19 +198,18 @@ p {
 .about__info {
     max-width: 500px;
 }
-.about__info h2 {
+.about__subtitle {
     margin-bottom: 8px;
     font-size: 3rem;
     color: var(--primary-color);
 }
-.about__info h1 {
+.about__title {
     margin-bottom: 16px;
     font-size: 4rem;
     color: var(--light);
 }
-.about__info p {
+.about__parraf{
     margin-bottom: 24px;
-    /* line-height: 2rem */
 }
 /* Skills */
 .skills {
