@@ -1,6 +1,7 @@
 export class SwitchThemeButton extends HTMLElement {
     constructor() {
         super();
+        this.prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     }
     static get observedAttributes() {
         return ['device'];
@@ -28,7 +29,6 @@ export class SwitchThemeButton extends HTMLElement {
         this.appendChild(this.getTemplate().content.cloneNode(true));
     }
     switchTheme() {
-        const switchElements = document.getElementsByClassName("switch-theme");
         const themeButtons = this.getElementsByClassName('switchTheme__icon');
 
         for (const btn of themeButtons) {
@@ -37,13 +37,24 @@ export class SwitchThemeButton extends HTMLElement {
                 btn.style.animation = 'rotate-icon .3s linear both'
             }
         }
-        for (const e of switchElements) {
-            e.classList.toggle("lightTheme")
+        if (document.documentElement.classList.contains('darkTheme')) {
+            document.documentElement.classList.remove('darkTheme');
+            document.documentElement.classList.add('lightTheme');
+        } else {
+            document.documentElement.classList.remove('lightTheme');
+            document.documentElement.classList.add('darkTheme');
         }
     }
     connectedCallback() {
         this.render();
         this.addEventListener("click", this.switchTheme.bind(this));
+
+        // Set the initial theme based on the user's preferred color scheme
+        if (this.prefersDarkScheme.matches) {
+            document.documentElement.classList.add('darkTheme');
+        } else {
+            document.documentElement.classList.add('lightTheme');
+        }
     }
 }
 customElements.define("theme-switcher", SwitchThemeButton);

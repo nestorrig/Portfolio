@@ -15,7 +15,7 @@
 }
 @keyframes ajust-header {
     to {
-        background-color: var(--dark);
+        background-color: var(--bg);
     }
 }
 @keyframes expand {

@@ -1,28 +1,54 @@
 :root {
-    --dark: #111111;
-    --dark2: #181818;
-    --dark3: #1e1e1e;
-    --light: #fcfcfc;
-    --light2: #eaeaea;
-    --light3: #dddddd;
     --text-color: #7c7c7c;
     --primary-color:#a2101b;
     --secondary-color: #f83a3a;
     --gradient--color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    --gradient--dark: linear-gradient(90deg, var(--dark) 40%, var(--dark2) 100%);
-    --gradient--light: linear-gradient(90deg, var(--light) 40%, var(--light2) 100%);
     --header-height: 54px;
     --font-size: 1.7rem;
 }
-
+.darkTheme:root {
+    --bg: #111111;
+    --bg2: #181818;
+    --bg3: #1e1e1e;
+    --accent: #fcfcfc;
+    --accent2: #eaeaea;
+    --accent3: #dddddd;
+    --gradient: linear-gradient(90deg, var(--bg) 40%, var(--bg2) 100%);
+}
+.lightTheme:root {
+    --bg: #fcfcfc;
+    --bg2: #eaeaea;
+    --bg3: #dddddd;
+    --accent: #111111;
+    --accent2: #181818;
+    --accent3: #1e1e1e;
+    --gradient: linear-gradient(90deg, var(--bg) 40%, var(--bg2) 100%);
+}
+.lightTheme {
+    .svg__logo img {
+    filter: brightness(.179);
+    }
+    .navBar__item path {
+    stroke: var(--accent);
+    }
+    .button {
+        color: var(--bg);
+    }
+    & h1, h2, h3 {
+        color: var(--accent);
+    }
+    .about__subtitle {
+        color: var(--secondary-color);
+    }
+}
 /* principal styles */
 ::-moz-selection {
-    color: var(--dark3);
-    background-color: var(--light);
+    color: var(--bg3);
+    background-color: var(--accent);
 }
 ::selection {
-    background-color: var(--light);
-    color: var(--dark3);
+    background-color: var(--accent);
+    color: var(--bg3);
 }
 .inactive {
     display: none !important;
@@ -31,13 +57,13 @@
     filter: brightness(.5);
 }
 .bg__1 {
-    background-color: var(--dark);
+    background-color: var(--bg);
 }
 .bg__2 {
-    background-color: var(--dark2);
+    background-color: var(--bg2);
 }
 .bg__3 {
-    background-color: var(--dark3);
+    background-color: var(--bg3);
 }
 .z__1 {
     z-index: 1;
@@ -57,7 +83,7 @@
 .button {
     background: var(--primary-color);
     background: var(--gradient--color);
-    color: var(--light);
+    color: var(--accent);
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
@@ -96,7 +122,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--dark3);
+    background-color: var(--bg3);
     left: calc(0px - 70vw);
 }
 .menuButtons {
@@ -107,14 +133,14 @@ p {
 .menuButtons__item {
     width: 50px;
     height: 50px;
-    background-color: var(--light3);
+    background-color: var(--accent3);
     border-radius: 50%;
     animation: rotate-icon linear both ;
     animation-duration: .3s;
 }
 .menuButtons__icon {
     margin: auto;
-    fill: var(--dark3);
+    fill: var(--bg3);
     width: 32px;
     height: 32px;
 }
@@ -136,7 +162,7 @@ p {
 }
 .switchTheme__icon {
     height: auto;
-    fill: var(--light);
+    fill: var(--accent);
     cursor: pointer;
 }
 /* header */
@@ -157,7 +183,7 @@ p {
 .navBar__item {
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--accent);
     &:hover {
         color: var(--secondary-color);
         & path {
@@ -177,8 +203,8 @@ p {
 /* about */
 .about {
     padding-top: var(--header-height);
-    background: var(--dark);
-    background: var(--gradient--dark)
+    background: var(--bg);
+    background: var(--gradient)
 }
 .about .center {
     margin-top: 72px;
@@ -201,12 +227,12 @@ p {
 .about__subtitle {
     margin-bottom: 8px;
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .about__title {
     margin-bottom: 16px;
     font-size: 4rem;
-    color: var(--light);
+    color: var(--accent);
 }
 .about__parraf{
     margin-bottom: 24px;
@@ -247,8 +273,8 @@ p {
     gap: 36px;
 }
 .skills__roles__item:hover {
-    background: var(--gradient--dark);
-    color: var(--light);
+    background: var(--gradient);
+    color: var(--accent);
     transition: all .6s;
     &:nth-child(1) h2 {
         animation: shake-left-right 1s infinite;
@@ -265,7 +291,7 @@ p {
 }
 .roles__text h2 {
     font-size: 3.2rem;
-    color: var(--light);
+    color: var(--accent);
 }
 .skills__experience {
     margin-block: 48px;
@@ -302,13 +328,13 @@ p {
     font-weight: 900;
 }
 .skills__experience__item.__years h2 {
-    color: var(--light);
+    color: var(--accent);
 }
 h2.skills__techs {
     margin-bottom: 24px;
     font-size: 3rem;
     text-align: center;
-    color: var(--light);
+    color: var(--accent);
 }
 .skills__techs {
     display: flex;
@@ -330,10 +356,10 @@ h2.skills__techs {
     height: 80px;
 }
 .skills__techs__item:hover {
-    background: var(--gradient--dark);
-    color: var(--light);
+    background: var(--gradient);
+    color: var(--accent);
     & svg{
-        fill: var(--light);
+        fill: var(--accent);
         transition: all .6s;
     }
 }
@@ -353,7 +379,7 @@ h2.skills__techs {
 .projects__info__text h2 {
     margin-bottom: 8px;
     font-size: 2.4rem;
-    color: var(--light);
+    color: var(--accent);
 }
 .projects__box {
     display: grid;
@@ -377,7 +403,7 @@ h2.skills__techs {
 .projects__item__image figcaption {
     margin-top: 16px;
     font-size: 2rem;
-    color: var(--light);
+    color: var(--accent);
 }
 .projects__item__links {
     margin-top: 16px;
@@ -410,7 +436,7 @@ h2.skills__techs {
 .contact__text h3 {
     margin-bottom: 24px;
     font-size: 4rem;
-    color: var(--light);
+    color: var(--accent);
 }
 /* FOOTER */
 .footer__1 {
@@ -446,7 +472,7 @@ h2.skills__techs {
     transition: all .5s;
 }
 .footer__list__social div:hover >  a {
-    color: var(--dark3);
+    color: var(--bg3);
     background-color: var(--text-color);
     border-radius: 50%;
 }
