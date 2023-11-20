@@ -27,8 +27,23 @@ export class SwitchThemeButton extends HTMLElement {
     render() {
         this.appendChild(this.getTemplate().content.cloneNode(true));
     }
+    switchTheme() {
+        const switchElements = document.getElementsByClassName("switch-theme");
+        const themeButtons = this.getElementsByClassName('switchTheme__icon');
+
+        for (const btn of themeButtons) {
+            btn.classList.toggle("inactive")
+            if (!btn.classList.contains("inactive")) {
+                btn.style.animation = 'rotate-icon .3s linear both'
+            }
+        }
+        for (const e of switchElements) {
+            e.classList.toggle("lightTheme")
+        }
+    }
     connectedCallback() {
         this.render();
+        this.addEventListener("click", this.switchTheme.bind(this));
     }
 }
 customElements.define("theme-switcher", SwitchThemeButton);
