@@ -1,13 +1,3 @@
-@keyframes showMenu {
-    to {
-        left: 0px;
-    }
-}
-@keyframes hideMenu {
-    0% {
-        left: 0px;
-    }
-}
 @keyframes rotate-icon {
     to {
         transform: rotate(360deg);

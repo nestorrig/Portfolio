@@ -113,7 +113,7 @@ p {
 /* mobile menu */
 .menu {
     position: fixed;
-    bottom: 0;
+    top: 0;
     height: 100dvh;
     width: 70vw;
     padding: 48px 24px;
@@ -123,7 +123,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--bg3);
-    left: calc(0px - 70vw);
+    transform: translate(-70vw);
+    transition: transform .3s;
 }
 .menuButtons {
     position: fixed;

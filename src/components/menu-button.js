@@ -31,15 +31,15 @@ export class MenuButton extends HTMLElement {
     showOrHideMenu(openMenu, closeMenu, mobileMenu, main) {
         const test = closeMenu.classList.contains("inactive");
         if (test) {
-            mobileMenu.style.animation = 'showMenu .3s linear both';
+            mobileMenu.style.transform = 'translateX(0)';
             main.classList.add("brightness");
         } else {
-            mobileMenu.style.animation = 'hideMenu .3s linear both';
+            mobileMenu.style.transform = 'translateX(-70vw)';
             main.classList.remove("brightness");
         }
         this.switchButtons(openMenu, closeMenu);
         main.addEventListener("click", ()=> {
-            mobileMenu.style.animation = 'hideMenu .3s linear both';
+            mobileMenu.style.transform = 'translateX(-70vw)';
             main.classList.remove("brightness");
             openMenu.classList.remove("inactive");
             closeMenu.classList.add("inactive");
