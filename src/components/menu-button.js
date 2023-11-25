@@ -48,18 +48,23 @@ export class MenuButton extends HTMLElement {
     // Se conecta el componente
     connectedCallback() {
         this.render();
-
-        const openMenu = this.querySelector('#OpenMenu');
-        const closeMenu = this.querySelector('#CloseMenu');
-        const mobileMenu = document.getElementById('MobileMenu');
-        const main = document.querySelector('main');
-        const navItems = document.getElementsByClassName('navBar__item');
-
-        for (const item of navItems) {
-            item.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
-        }
-        openMenu.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
-        closeMenu.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
+        document.addEventListener('DOMContentLoaded', () => {
+            const openMenu = this.querySelector('#OpenMenu');
+            const closeMenu = this.querySelector('#CloseMenu');
+            const mobileMenu = document.getElementById('MobileMenu');
+            const main = document.querySelector('main');
+            const navItems = document.getElementsByClassName('navBar__item');
+    
+            if (openMenu && closeMenu && mobileMenu && main && navItems) {
+                for (const item of navItems) {
+                    item.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
+                }
+                openMenu.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
+                closeMenu.addEventListener("click", () => this.showOrHideMenu(openMenu, closeMenu, mobileMenu, main));
+            } else {
+                console.error('One or more elements could not be found');
+            }
+        });
     }
 }
 customElements.define("menu-button", MenuButton);
