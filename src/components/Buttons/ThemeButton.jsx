@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export const ThemeButton = ({ device }) => {
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [isDarkTheme, setIsDarkTheme] = useState(true);
 
     const switchTheme = () => {
         setIsDarkTheme(!isDarkTheme);

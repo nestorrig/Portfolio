@@ -1,14 +1,12 @@
 import { Header } from "./components/Header/Header"
 import { Menu } from "./components/Menu/Menu"
 import { Footer } from "./components/Footer/Footer"
-import { MenuButton } from "./components/Buttons/MenuButton"
 import { Project } from "./components/Project/Project"
 
 function App() {
 
     return (
     <>
-        <MenuButton/>
         <Menu/>
         <Header/>
 
@@ -284,8 +282,8 @@ function App() {
                 </div>
             </section>
 
-        </main>
         <Footer/>
+        </main>
     </>
     )
 }
