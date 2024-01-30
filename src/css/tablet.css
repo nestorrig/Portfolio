@@ -6,14 +6,19 @@
 }
 .header {
     position: fixed;
+    right: 50%;
+    transform: translateX(50%);
+    top: 16px;
     z-index: 3;
-    width: 100%;
+    width: calc(100% - 64px);
+    max-width: 1200px;
     height: var(--header-height);
     margin-bottom: calc(var(--header-height) * (-1));
     padding: 10px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius:16px;
     animation: ajust-header linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
@@ -110,7 +115,7 @@
 .footer__list__social div:hover > a {
     /* animation:shake-left-right 0.8s linear both; */
     & svg {
-        animation: socialIcon 1s linear;
+        animation: bounce-bottom 1s linear both
     }
 }
 @media screen and (min-width: 920px) {
@@ -119,11 +124,5 @@
     }
     .skills__roles__item:nth-child(n) figure {
         height: 200px;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .header {
-        justify-content: center;
-        gap: 330px;
     }
 }

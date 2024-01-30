@@ -3,11 +3,11 @@
     --primary-color:#a2101b;
     --secondary-color: #f83a3a;
     --gradient--color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    --header-height: 54px;
+    --header-height: 60px;
     --font-size: 1.7rem;
 }
 .darkTheme:root {
-    --bg: #111111;
+    --bg: rgb(17, 17, 17);
     --bg2: #181818;
     --bg3: #1e1e1e;
     --accent: #fcfcfc;
@@ -16,7 +16,7 @@
     --gradient: linear-gradient(90deg, var(--bg) 40%, var(--bg2) 100%);
 }
 .lightTheme:root {
-    --bg: #fcfcfc;
+    --bg: rgb(252, 252, 252);
     --bg2: #eaeaea;
     --bg3: #dddddd;
     --accent: #111111;
@@ -39,6 +39,11 @@
     }
     .about__subtitle {
         color: var(--secondary-color);
+    }
+    .header {
+        animation: ajust-header-light linear both;
+        animation-timeline: scroll();
+        animation-range: 0 200px;
     }
 }
 /* principal styles */
