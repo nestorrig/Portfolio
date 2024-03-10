@@ -4,12 +4,10 @@ import { Icon } from "../Icons/Icon";
 export const SkillCard = ({ name, icon }) => {
   return (
     <div className="skills__techs__item bg__3">
-    <figure>
+      <figure>
         <Icon name={icon} />
-    </figure>
-    <h3>
-        {name}
-    </h3>
-</div>
+      </figure>
+      <h3>{name}</h3>
+    </div>
   );
-}
+};
