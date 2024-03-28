@@ -5,11 +5,10 @@ const navLinks = [
   { label: "Skills", link: "#Skills" },
   { label: "Projects", link: "#Projects" },
   { label: "Contact", link: "#Contact" },
-  { label: "CV", link: "./src/assets/docs/Nesto_Rios_Garcia-CV.pdf" },
+  { label: "CV", link: "./src/assets/docs/Nestor_Rios_Garcia-CV.pdf" },
 ];
 
 export function Header() {
-
   return (
     <header className="header">
       <figure className="navBar__logo navBar__logo--desktop svg__logo">
