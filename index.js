@@ -1,2 +1,2 @@
 console.log('sigo aqui');
-const root = document.documentElement;
+// const root = document.documentElement;
