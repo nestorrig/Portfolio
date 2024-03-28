@@ -120,6 +120,7 @@ function App() {
             <SkillCard name="React js" icon="react" />
             <SkillCard name="Tailwind CSS" icon="tailwind" />
             <SkillCard name="Three js" icon="threejs" />
+            <SkillCard name="Greensock" icon="greensock" />
           </div>
         </section>
 
@@ -141,16 +142,16 @@ function App() {
               live="https://christopher-emmanuel.netlify.app/"
             />
             <Project
+              img="./src/assets/imgs/projects/todo-app.webp"
+              project="Todo App"
+              repo="https://github.com/nestorrig/PLATZI-React"
+              live="https://todo-app-nestorrig.netlify.app/"
+            />
+            <Project
               img="./src/assets/imgs/projects/Pamela.webp"
               project="Pamela Landing Page"
               repo="https://github.com/nestorrig/Pamela_portfolio"
               live="https://nestorrig.github.io/Pamela_portfolio"
-            />
-            <Project
-              img="./src/assets/imgs/projects/MOKEPON.webp"
-              project="Mokepon"
-              repo="https://github.com/nestorrig/PLATZI-Curso-Programacion-Basica"
-              live="https://nestorrig.github.io/PLATZI-Curso-Programacion-Basica/progarmar/mokepon/mokepon.html"
             />
             <Project
               img="./src/assets/imgs/projects/Calculators.webp"
@@ -159,28 +160,22 @@ function App() {
               live="https://nestorrig.github.io/PLATZI-Taller-Practico-de-JavaScript_Matematicas-y-Estadistica-Basica"
             />
             <Project
+              img="./src/assets/imgs/projects/MOKEPON.webp"
+              project="Mokepon"
+              repo="https://github.com/nestorrig/PLATZI-Curso-Programacion-Basica"
+              live="https://nestorrig.github.io/PLATZI-Curso-Programacion-Basica/progarmar/mokepon/mokepon.html"
+            />
+            <Project
+              img="./src/assets/imgs/projects/Platzi-Travel.webp"
+              project="Platzi Travel"
+              repo="https://github.com/nestorrig/PLATZI-Tailwind-Basico"
+              live="https://platzi-travel-nestorrig.netlify.app/"
+            />
+            <Project
               img="https://static.platzi.com/media/porfilio/batatabit_capture_06_162709e2-09e2-440e-952d-a2cd7d5b25f2.png"
               project="Batatabit"
               repo="https://github.com/nestorrig/PLATZI-Curso-de-Responsive-Design_Maquetacion-Mobile-First"
               live="https://nestorrig.github.io/PLATZI-Curso-de-Responsive-Design_Maquetacion-Mobile-First/"
-            />
-            <Project
-              img="https://static.platzi.com/media/porfilio/blog-clase25_1e4fb70b-1fc6-4238-a9d4-d10d65b32505.png"
-              project="Blog"
-              repo="https://github.com/nestorrig/PLATZI-Curso-Practico-de-Maquetacion-en-CSS/"
-              live="https://nestorrig.github.io/PLATZI-Curso-Practico-de-Maquetacion-en-CSS/"
-            />
-            <Project
-              img="https://static.platzi.com/media/porfilio/google-clone_ba049f84-07da-4525-8c32-44891261fb39.png"
-              project="Google clone"
-              repo="https://github.com/nestorrig/PLATZI-Curso-Practico-de-HTML-y-CSS"
-              live="https://nestorrig.github.io/PLATZI-Curso-Practico-de-HTML-y-CSS"
-            />
-            <Project
-              img="https://static.platzi.com/media/porfilio/wikipedia-clone_1b837b2a-a8a1-4dff-980e-86737b866783.png"
-              project="Wikipedia clone"
-              repo="https://github.com/nestorrig/PLATZI-Curso-Practico-de-HTML-y-CSS"
-              live="https://nestorrig.github.io/PLATZI-Curso-Practico-de-HTML-y-CSS/wiki"
             />
           </div>
         </section>

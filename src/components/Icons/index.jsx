@@ -1,4 +1,4 @@
-import { CssIcon, GitIcon, GithubIcon, HtmlIcon, JsIcon, ReactIcon, SassIcon, TailwindIcon, ThreeJsIcon } from "./iconos";
+import { CssIcon, GitIcon, GithubIcon, GreensockIcon, HtmlIcon, JsIcon, ReactIcon, SassIcon, TailwindIcon, ThreeJsIcon } from "./iconos";
 // importa todos los demás iconos aquí
 
 // exporta un objeto que mapea los nombres de los iconos a sus componentes correspondientes
@@ -12,5 +12,6 @@ export const icons = {
   react: ReactIcon,
   tailwind: TailwindIcon, 
   threejs: ThreeJsIcon,
+  greensock: GreensockIcon,
   // agrega todos los demás iconos aquí
 };
