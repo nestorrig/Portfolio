@@ -570,3 +570,144 @@ h2.skills__techs {
     background-color: var(--text-color);
     border-radius: 50%;
 }
+
+@media  (min-width: 620px) {
+    .brightness {
+        filter: brightness(1);
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .header {
+        position: fixed;
+        right: 50%;
+        transform: translateX(50%);
+        top: 16px;
+        z-index: 3;
+        width: calc(100% - 64px);
+        max-width: 1200px;
+        height: var(--header-height);
+        margin-bottom: calc(var(--header-height) * (-1));
+        /* padding: 10px 16px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        animation: ajust-header linear both;
+        animation-timeline: scroll();
+        animation-range: 0 200px;
+    }
+    
+    .navBar__logo--desktop {
+        width: 40px;
+        margin: 10px 16px;
+    }
+    
+    .navBar--desktop {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    
+        .containCV {
+            align-items: normal;
+        }
+    }
+    
+    /* It helps with the animation */
+    .navBar__div {
+        width: auto;
+        padding: 4px 8px;
+    
+        &:hover .navBar__item {
+            color: var(--secondary-color);
+        }
+    }
+    
+    .navBar__item {
+        transition: color .3s;
+    }
+    
+    .switchTheme--desktop {
+        display: block;
+        margin: 10px 16px;
+    }
+    
+    .menuButtons {
+        display: none;
+    }
+    
+    .about .center {
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    .about__imgContainer {
+        min-width: 360px;
+        max-width: 400px;
+    }
+    
+    .about__info {
+        margin-bottom: 48px;
+    }
+    
+    .skills__roles__item:last-child {
+        flex-direction: row;
+        height: auto;
+    }
+    
+    .skills__roles__item:nth-child(-n+2) figure {
+        height: 240px;
+    }
+    
+    .skills__experience {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .skills__experience__item.__years {
+        grid-row: 1/3;
+    }
+    
+    .skills__techs__item {
+        flex-basis: 180px;
+    }
+    
+    .contact {
+        margin-bottom: -400px;
+    }
+    
+    .footer__1 {
+        height: 300px;
+    }
+    
+    .footer__2 {
+        display: flex;
+    }
+    
+    .footer__nav {
+        display: none;
+    }
+    
+    .footer__2 .footer__list {
+        padding: 56px;
+    }
+    
+    
+    @media screen and (min-width: 920px) {
+        .skills__roles__item:last-child {
+            flex-direction: column;
+        }
+    
+        .skills__roles__item:nth-child(n) figure {
+            height: 200px;
+        }
+    }
+    
+    
+    @supports (scrollbar-color: auto) {
+        * {
+            scrollbar-color: var(--text-color) var(--bg);
+        }
+    }
+}
