@@ -74,7 +74,7 @@ export function Footer({ visibleTop = "" }) {
       <div className="footer__2 bg__3">
         <div className="footer__list center">
           <figure className="footer__list__logo svg__logo">
-            <img src="./src/assets/logos/logo_name.svg" alt="Logo" />
+            <img src="./logos/logo_name.svg" alt="Logo" />
           </figure>
           <nav className="footer__list__social">
             {socialLinks.map(({ href, Icon }) => (

@@ -120,7 +120,6 @@
 
     &:hover {
         border-radius: 16px;
-        animation: jello-horizontal 1s linear both;
     }
 
     &:active {

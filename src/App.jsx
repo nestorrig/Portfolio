@@ -14,11 +14,7 @@ function App() {
         <section className="about" id="About">
           <div className="center">
             <figure className="about__imgContainer">
-              <img
-                className="about__img"
-                src="./src/assets/imgs/me.png"
-                alt=""
-              />
+              <img className="about__img" src="./imgs/me.png" alt="Me" />
             </figure>
             <article className="about__info">
               <h2 className="about__subtitle">Hello Im Nestor</h2>
@@ -47,7 +43,7 @@ function App() {
           <div className="skills__roles center z__2">
             <article className="skills__roles__item bg__3 ">
               <figure>
-                <img src="./src/assets/svgs/roles_ux-ui.svg" alt="" />
+                <img src="./svgs/roles_ux-ui.svg" alt="" />
               </figure>
               <div className="roles__text">
                 <h2>Animation Developer</h2>
@@ -60,7 +56,7 @@ function App() {
             </article>
             <article className="skills__roles__item bg__3">
               <figure>
-                <img src="/src/assets/svgs/roles_programming.svg" alt="" />
+                <img src="./svgs/roles_programming.svg" alt="" />
               </figure>
               <div className="roles__text">
                 <h2>General Front end Developer</h2>
@@ -74,7 +70,7 @@ function App() {
             </article>
             <article className="skills__roles__item bg__3">
               <figure>
-                <img src="/src/assets/svgs/roles_responsive.svg" alt="" />
+                <img src="/svgs/roles_responsive.svg" alt="" />
               </figure>
               <div className="roles__text">
                 <h2>Responsive Developer</h2>
@@ -136,37 +132,37 @@ function App() {
           </article>
           <div className="projects__box center">
             <Project
-              img="./src/assets/imgs/projects/Christopher-Emmanuel.webp"
+              img="./imgs/projects/Christopher-Emmanuel.webp"
               project="Accountant Landing Page"
               repo="https://github.com/nestorrig/Accountant_page"
               live="https://christopher-emmanuel.netlify.app/"
             />
             <Project
-              img="./src/assets/imgs/projects/todo-app.webp"
+              img="./imgs/projects/todo-app.webp"
               project="Todo App"
               repo="https://github.com/nestorrig/PLATZI-React"
               live="https://todo-app-nestorrig.netlify.app/"
             />
             <Project
-              img="./src/assets/imgs/projects/Pamela.webp"
+              img="./imgs/projects/Pamela.webp"
               project="Pamela Landing Page"
               repo="https://github.com/nestorrig/Pamela_portfolio"
               live="https://nestorrig.github.io/Pamela_portfolio"
             />
             <Project
-              img="./src/assets/imgs/projects/Calculators.webp"
+              img="./imgs/projects/Calculators.webp"
               project="Calculators"
               repo="https://github.com/nestorrig/PLATZI-Taller-Practico-de-JavaScript_Matematicas-y-Estadistica-Basica"
               live="https://nestorrig.github.io/PLATZI-Taller-Practico-de-JavaScript_Matematicas-y-Estadistica-Basica"
             />
             <Project
-              img="./src/assets/imgs/projects/MOKEPON.webp"
+              img="./imgs/projects/MOKEPON.webp"
               project="Mokepon"
               repo="https://github.com/nestorrig/PLATZI-Curso-Programacion-Basica"
               live="https://nestorrig.github.io/PLATZI-Curso-Programacion-Basica/progarmar/mokepon/mokepon.html"
             />
             <Project
-              img="./src/assets/imgs/projects/Platzi-Travel.webp"
+              img="./imgs/projects/Platzi-Travel.webp"
               project="Platzi Travel"
               repo="https://github.com/nestorrig/PLATZI-Tailwind-Basico"
               live="https://platzi-travel-nestorrig.netlify.app/"
