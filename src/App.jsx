@@ -14,22 +14,26 @@ function App() {
         <section className="about" id="About">
           <div className="center">
             <figure className="about__imgContainer">
-              <img className="about__img" src="./imgs/me.png" alt="Me" />
+              <img className="about__img" src="./imgs/profile.webp" alt="Me" />
             </figure>
             <article className="about__info">
-              <h2 className="about__subtitle">Hello Im Nestor</h2>
-              <h1 className="about__title">Front end Developer</h1>
+              <h2 className="about__subtitle">Hello I&apos;m Nestor</h2>
+              <h1 className="about__title">Creative Developer</h1>
               <p className="about__parraf">
-                Ive held a lifelong fascination with the realm of science and
-                technology. This passion guided me to explore the domain of
-                software and its various specializations. What drew me
-                particularly to Front-End development was the harmonious blend
-                it offers between design aesthetics and functionality.
+                A lover of science and technology, focused on the world of
+                software and its specializations. I excel in creative Frontend
+                development using technologies like WebGL, Three.js, and React
+                Three Fiber to create immersive worlds on the web. I am the
+                recent winner of the{" "}
+                <a href="https://threejs-journey.com/challenges/013-magic-spells">
+                  Three.js Journey Challenge
+                </a>{" "}
+                for my project &quot;Magic Wand &quot; where I created a magical
+                environment with a 3D configurator to choose your wand&apos;s
+                material and various spells to use with it.
               </p>
               <button className="button" type="button">
-                <a href="mailto:contacto@nestorriosgarcia.com">
-                  Send me an email
-                </a>
+                <a href="mailto:nestorrigs@gmail.com">Send me an email</a>
               </button>
             </article>
           </div>
@@ -132,6 +136,30 @@ function App() {
           </article>
           <div className="projects__box center">
             <Project
+              img="./imgs/projects/magic-wand-pic-und.webp"
+              project="Magic Wand"
+              repo="https://github.com/nestorrig/13-Magic-Spells"
+              live="https://magic-wand.nestorrig.com/"
+            />
+            <Project
+              img="./imgs/projects/echoes-in-the-fog-play.webp"
+              project="Echoes in the fog (in progress)"
+              repo="https://github.com/nestorrig/14-halloween-2"
+              live="https://echoes-in-the-fog.nestorrig.com/"
+            />
+            <Project
+              img="./imgs/projects/guitar.webp"
+              project="3D Guitar Landing Page"
+              repo="https://github.com/nestorrig/guitar-landing"
+              live="https://guitar.nestorrig.com/"
+            />
+            <Project
+              img="./imgs/projects/threejs-basic-physics.webp"
+              project="Three.js Basic Physics"
+              // repo="https://github.com/nestorrig/Accountant_page"
+              live="https://threejs-basic-physics.nestorrig.com/"
+            />
+            <Project
               img="./imgs/projects/Christopher-Emmanuel.webp"
               project="Accountant Landing Page"
               repo="https://github.com/nestorrig/Accountant_page"
@@ -187,7 +215,7 @@ function App() {
                 </p>
               </article>
               <button className="button" type="button">
-                <a href="mailto:contacto@nestorriosgarcia.com">Contact</a>
+                <a href="mailto:nestorrigs@gmail.com">Contact</a>
               </button>
             </div>
           </div>

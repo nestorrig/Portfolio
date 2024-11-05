@@ -262,9 +262,10 @@ p {
 }
 
 .about .center {
-    margin-top: 72px;
+    /* margin-top: 72px; */
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     gap: 36px;
 }
 
@@ -274,8 +275,8 @@ p {
 }
 
 .about__img {
-    margin-top: -100px;
-    height: 500px;
+    margin-bottom: 40px;
+    border-radius: 50%;
     object-position: top;
 }
 
@@ -297,6 +298,10 @@ p {
 
 .about__parraf {
     margin-bottom: 24px;
+}
+
+.about__parraf a{
+    color: var(--secondary-color);
 }
 
 /* Skills */
@@ -640,7 +645,8 @@ h2.skills__techs {
     
     .about .center {
         flex-direction: row;
-        align-items: end;
+        margin-top: 72px;
+        /* align-items: end; */
     }
     
     .about__imgContainer {

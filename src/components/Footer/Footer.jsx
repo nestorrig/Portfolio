@@ -62,8 +62,8 @@ const socialLinks = [
   { href: "https://github.com/nestorrig", Icon: GithubIcon },
   { href: "https://www.linkedin.com/in/nestorrig", Icon: LinkedInIcon },
   { href: "https://twitter.com/nestorrig", Icon: TwitterIcon },
-  { href: "https://www.facebook.com/nestorrig", Icon: FacebookIcon },
-  { href: "https://platzi.com/p/nestorrig/", Icon: PlatziIcon },
+  // { href: "https://www.facebook.com/nestorrig", Icon: FacebookIcon },
+  // { href: "https://platzi.com/p/nestorrig/", Icon: PlatziIcon },
 ];
 
 // if visibleTop is inactive, the footer won't be visible
