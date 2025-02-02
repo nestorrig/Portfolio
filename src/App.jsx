@@ -142,6 +142,12 @@ function App() {
               live="https://magic-wand.nestorrig.com/"
             />
             <Project
+              img="./imgs/projects/bubble-shooter-webgl.png"
+              project="Bubble Shooter WebGL"
+              repo="https://github.com/nestorrig/Bubble"
+              live="https://bubble.nestorrig.com/"
+            />
+            <Project
               img="./imgs/projects/echoes-in-the-fog-play.webp"
               project="Echoes in the fog (in progress)"
               repo="https://github.com/nestorrig/14-halloween-2"

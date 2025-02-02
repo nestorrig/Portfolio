@@ -50,7 +50,7 @@ export function Menu () {
             </a>
             <a
               className="navBar__item containCV"
-              href="./docs/Nestor Rios Garcia CV EN (1).pdf"
+              href="./docs/Nestor Rios Garcia CV.pdf"
             >
               <p>CV</p>
               <svg

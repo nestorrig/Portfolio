@@ -5,7 +5,7 @@ const navLinks = [
   { label: "Skills", link: "#Skills" },
   { label: "Projects", link: "#Projects" },
   { label: "Contact", link: "#Contact" },
-  { label: "CV", link: "./docs/Nestor Rios Garcia CV EN (1).pdf" },
+  { label: "CV", link: "./docs/Nestor Rios Garcia CV.pdf" },
 ];
 
 export function Header() {
